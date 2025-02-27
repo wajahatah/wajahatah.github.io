@@ -1,0 +1,158 @@
+/* Resume-specific styles extracted from main.css
+
+/* Resume Section General Styles 
+#resume {
+    padding: 60px 0;
+    background: #f8f9fa;
+}
+
+/* Timeline Styling 
+.timeline {
+    list-style: none;
+    padding: 0;
+}
+
+.timeline li {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+/* Titles and Headings 
+.timelin-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.line-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+/* Bullet Point Fix 
+.line-text-bullet {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.line-text-bullet li {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+/* Content Box 
+.content-text {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Adjustments 
+@media (max-width: 768px) {
+    .line-text-bullet {
+        margin-left: 15px;
+    }
+    .timelin-title {
+        font-size: 20px;
+    }
+    .line-title {
+        font-size: 18px;
+    }
+} */
+
+/* Updated Resume CSS */
+.cv-section-padding {
+    padding: 100px 0;
+}
+
+.cv-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.cv-timeline {
+    list-style: disc;
+    padding: 0;
+}
+
+.cv-timeline li {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.cv-content-text {
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cv-line-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* .cv-content-text ul {
+    list-style-type: disc !important;
+    margin-left: 20px;
+    padding-left: 20px;
+} */
+
+.cv-line-text {
+    font-size: 14px;
+    color: #555;
+}
+
+.cv-skill-head{
+    font-size: 14px;
+    font-weight: bold;
+    /* margin-bottom: 15px; */
+}
+
+.cv-bullet-container {
+    /* list-style-type: disc; */
+    margin-top: 10px;
+}
+
+.cv-line-text-bullet {
+    list-style-type: disc !important;
+    margin-left: 20px;
+    /* padding-left: 15px; */
+    display: block;
+}
+
+.cv-timelin-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.cv-icon-graduation, .cv-icon-briefcase {
+    font-size: 24px;
+    color: #333;
+}
+
+.cv-line-int {
+    list-style-type: none;
+    margin-left: 10px;
+    /* padding-left: 15px; */
+    /* display: block; */
+}
+
+.cv-download-btn {
+    background-color: #009dff; /* Change to your preferred color */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.cv-download-btn:hover {
+    background-color: #cc5500;
+}
