@@ -64,6 +64,8 @@ ul, ol {
 
 ul li, ol li {
   list-style: none;
+  /* list-style: initial !important; */
+  /* padding-left: 20px !important; */
 }
 
 .hero-heading {
@@ -431,7 +433,8 @@ a.back-to-top:hover, a.back-to-top:focus {
 
 .timeline li .line-text {
   color: #888;
-  line-height: 18px;
+  line-height: 20px;
+  margin: 0;
 }
 
 .timeline li:first-child:before {
@@ -1128,6 +1131,8 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   color: #00b4d9;
 }
 
+
+
 #copyright {
   background: #333;
 }
@@ -1165,7 +1170,8 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 }
 
 .articles-box ul {
-  list-style-type: none;
+  list-style-type: none ;
+  list-style-type: initial !important ;
   padding-left: 0;
 }
 
@@ -1183,5 +1189,18 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   text-decoration: underline;
 }
 
+.line-text-bullet {
+  list-style-type: disc; /* Ensure default bullet points appear */
+  padding-left: 20px; /* Adjust indentation */
+  margin: 0; /* Remove unwanted margin */
+}
+.line-text li {
+  margin-left: 0; /* Prevent extra indentation */
+}
 
-
+.navbar-nav .nav-item .active {
+  text-decoration: underline;
+  /* color: #00e5ff !important; */
+  color: #00b4d9 !important;
+  font-weight: bold;
+}
