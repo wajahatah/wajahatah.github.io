@@ -7,6 +7,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/resume.css" />
 </head>
 <body>
     <!-- Navbar Start -->
@@ -16,115 +17,160 @@
         <div class="collapse navbar-collapse" id="main-navbar">
           <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
             <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
-            <!-- <li class="nav-item"><a class="nav-link" href="about.html">About</a></li> -->
-            <li class="nav-item"><a class="nav-link" href="publication.html">Publications</a></li>
+            <li class="nav-item"><a class="nav-link" href="publication.html">Publications & Awards</a></li>
             <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
             <li class="nav-item"><a class="nav-link" href="activities.html">Activities</a></li>
-            <li class="nav-item"><a class="nav-link" href="resume.html">CV</a></li>
+            <li class="nav-item"><a class="nav-link active" href="resume.html">CV</a></li>
           </ul>
         </div>
       </div>
     </nav>
     <!-- Navbar End -->
+    
     <!-- Resume Section Start -->
-  <div id="resume" class="section-padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-6">
-          <div class="education wow fadeInRight" data-wow-delay="0.3s">
-            <ul class="timeline">
-              <li>
-                <i class="icon-graduation"></i>
-                <h2 class="timelin-title">Education</h2>
-              </li>
-              <li>
-                <div class="content-text">
-                  <h3 class="line-title">Bachelor of Science in Applied Physics with Distinction</h3>
-                  <span>2018 - 2022</span>
-                  <p>NED University of Engineering & Technology </p>
-                  <p>Majors in Electronics</p>
-                </div>
-              </li>
-            </ul>
+    <div id="cv-resume" class="cv-section-padding">
+      <div class="cv-container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="cv-education wow fadeInRight" data-wow-delay="0.3s">
+              <ul class="cv-timeline">
+                <li>
+                  <i class="cv-icon-graduation"></i>
+                  <h2 class="cv-timelin-title">Education</h2>
+                </li>
+                <li>
+                  <div class="cv-content-text">
+                    <h3 class="cv-line-title">Bachelor of Science in Applied Physics with Distinction</h3>
+                    <span>2018 - 2022</span>
+                    <p>NED University of Engineering & Technology</p>
+                    <p>Majors in Electronics</p>
+                  </div>
+                </li>
+              </ul>
+              <ul class="cv-timeline">
+                <li>
+                  <i class="cv-icon-skills"></i>
+                  <h2 class="cv-timelin-title">Skills</h2>
+                </li>
+                <li><div class="cv-content-text">
+                    <p class="cv-skill-head">AI and ML</p><p class="cv-line-int">SVM, KNN, RF, Decision Tree, ANN, CNN, Regression (Linear and Logistic), Transfer Learning, Reinforcement Learning, Object Detection, Yolo, Facial Recognition, Deep face, Tracking, Strong Sort, Deep Sort, MoViNet, ResNet, EfficientDet, Haar Cascade</p>
+                <!-- </div></li> -->
+                <!-- <li><div class="cv-content-text"> -->
+                    <p class="cv-skill-head">Programming Languages</p><p class="cv-line-int">C, C++, Python (numpy, pandas, matplotlib, Scikit-Learn, Tensorflow, Keras, OpenCV), html, css, Ladder logic</p>
+                <!-- </div></li> -->
+                <!-- <li><div class="cv-content-text"> -->
+                    <p class="cv-skill-head">Simulators</p><p class="cv-line-int">Altium Designer, Proteus, Multisim, Matlab Simulink, Gazebo</p>
+                <!-- </div></li> -->
+                <!-- <li><div class="cv-content-text"> -->
+                    <p class="cv-skill-head">Tools</p><p class="cv-line-int">EasyEDA, Draw.io, ESP IDF, PlatformIo</p>
+                <!-- </div></li> -->
+                <!-- <li><div class="cv-content-text"> -->
+                    <p class="cv-skill-head">Edge Devices</p><p class="cv-line-int">Arduino, ESP8266, ESP32, Raspberry Pi, Jetson</p></div></li>
+              </ul>
+              <ul class="cv-timeline">
+                <li>
+                  <i class="cv-icon-skills"></i>
+                  <h2 class="cv-timelin-title">Internships</h2>
+                </li>
+                <li><div class="cv-content-text"><h4 class="cv-line-text">Reasearch Intern: Neurocomputation Lab</h4>
+                    <span>July 2021 - June 2022</span>
+                <ul class="cv-line-int">
+                    <p>Designed and developed the first prototype of a retrofittable IoT circuit for a DC ceiling fan.</p>
+                    <p>Debugging and resolving issues in the existing IoT circuit of BLDC (Brushless DC) ceiling fans.</p>   
+                    <p>Worked on the Persistence of Vision (POV) mechanism for the fan.</p>   
+                    <p>Designed and developed base for locomotion and neck mechanism of the robot.</p>   
+                    <p>Developed an obstacle avoidance line following robot controlled by bluetooth mobile application.</p>   
+                    <p>Worked on the controlling of DC gear motors and DC Servo motors using arduino.</p>   
+                    <p>Implemented a computer vision algorithm for fire detection using existing CCTV cameras.</p>   
+                </ul>
+                </div></li>
+                <li><div class="cv-content-text"><h4 class="cv-line-text">PLC & VFD Intern: Electrodynamics Works</h4>
+                    <span>Feb 2021 - March 2021</span>
+                <ul class="cv-line-int">
+                    <p>Develop programs of Ladder logic for the Seimen's PLCs and HMI.</p>
+                    <p>Worked on Variable Frequency Drivers (VFD) assembling and controlling their parameters as per the load.</p>
+                    <p>Test inverters and VFDs circuit panel, circuit boards and IGBTs.</p>
+                </ul>
+                </div></li>
+                <li><div class="cv-content-text"><h4 class="cv-line-text">Electronics Intern: Artistic Milliners</h4>
+                    <span>Oct 2020 - Dec 2020</span>
+                <ul class="cv-line-int">
+                    <p>Worked on industrial stitching, cutting, metal detectors and washing machines, and dryers circuit boards, MCBs, inverters, motors, sensors, and PLCs. Diagnosing, understanding, and resolving the issues.</p>
+                    <p>Cable Ethernet wire in the whole building and main power supply department to monitor the power consumption of the building.</p>
+                </ul>
+                </div></li>
+                <!-- <li><div class="cv-content-text"><p class="cv-line-text">Simulators and Tools: Altium Designer, Proteus, Multisim, Matlab Simulink, Gazebo, EasyEDA</p></div></li>
+                <li><div class="cv-content-text"><p class="cv-line-text">Edge Devices: Arduino, Raspberry Pi, Jetson</p></div></li> -->
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-6">
-          <div class="education wow fadeInRight" data-wow-delay="0.3s">
-            <ul class="timeline">
-              <li>
-                <i class="icon-graduation"></i>
-                <h2 class="timelin-title">Skills</h2>
-              </li>
-              <!-- <li> -->
-                <!-- <div class="content-text"> -->
-                  <!-- <li> -->
-                    <div class="content-text">
-                        <!-- <ul> -->
-                          <li>Programming Languages: C, C++, Python</li>
-                          <li>Simulators and Tools: Altium Designer, Proteus, Multisim, Matlab Simulink, Gazebo, EasyEDA </li>
-                          <li>Edge Devices: Arduino, Raspberry Pi, Jetson</li>
-                          <!-- <li>Operating Systems: Windows, Linux</li> -->
-                          <!-- <li>Soft Skills: Leadership, Teamwork, Communication, Problem Solving, Time Management</li> -->
-                        <!-- </ul> -->
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="cv-experience wow fadeInRight" data-wow-delay="0.6s">
+              <ul class="cv-timeline">
+                <li>
+                  <i class="cv-icon-briefcase"></i>
+                  <h2 class="cv-timelin-title">Experience</h2>
+                </li>
+                <li>
+                  <div class="cv-content-text">
+                    <h3 class="cv-line-title">AI Developer - Lambda Theta</h3>
+                    <span>September 2024 - Present</span>
+                    <div class="cv-bullet-container">
+                      <ul class="cv-line-text-bullet"> 
+                        <li>Developed computer vision algorithms for pose detection through the backside of 4 persons in one frame, leveraging normalized datasets and advanced preprocessing techniques.</li>
+                        <li>Implemented machine learning models for classification tasks, utilizing frameworks such as Albumentations (v1.4.20) and MMCV-full (v1.7.2) for data augmentation and model training.</li>
+                        <li>Built hybrid detection models capable of taking both video frames and keypoints as input, enabling efficient and scalable detection pipelines.</li>
+                        <li>Optimized computational workflows using multithreading, reducing latency and enhancing throughput in real-time systems.</li>
+                        <li>Deployed and managed production systems with 16 RTSP cameras, ensuring seamless real-time processing, stability, and continuous operation in production environments.</li>
+                        <li>Conducted testing and evaluation, effectively utilizing a dataset of 35 training videos to validate model performance</li>
+                      </ul>
                     </div>
-                  </li>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-6">
-          <div class="experience wow fadeInRight" data-wow-delay="0.6s">
-            <ul class="timeline">
-              <li>
-                <i class="icon-briefcase"></i>
-                <h2 class="timelin-title">Experience</h2>
-              </li>
-              <li>
-                <div class="content-text">
-                  <h3 class="line-title">Research Assistant - NEURO COMPUTATION LAB</h3>
-                  <span> September 2022 - Present</span>
-                  <p class="line-text">
-                   Research to built a local Magnetometer to observe the effect of magnetic field produce due to sun strom.
-                   Designed Robotic Hand, Neck and Base Movement Mechanism of a Medical Robot.
-                  </p>
-                <!-- </div> 
-              </li>
-              <li>
-                 <div class="content-text">
-                  <h3 class="line-title">UX/UI Designer - Samsung</h3>
-                  <span>Nov 2016 - Dec 2017</span>
-                  <p class="line-text">
-                    Expenses as material breeding insisted building to in.
-                    Continual so distrusts pronounce by unwilling listening.
-                    Thing do taste on we manor.
-                  </p>
-                </div>
-              </li>
-              <li>
-                <div class="content-text">
-                  <h3 class="line-title">Intern UI Designer - UIdeck</h3>
-                  <span>Mar 2015 - Oct 2016</span>
-                  <p class="line-text">
-                    Expenses as material breeding insisted building to in.
-                    Continual so distrusts pronounce by unwilling listening.
-                    Thing do taste on we manor.
-                  </p> -->
-                </div>
-              </li>
-            </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="cv-content-text">
+                    <h3 class="cv-line-title">Research Assistant - NEUROCOMPUTATION LAB - NCAI - NED</h3>
+                    <span>September 2022 - September 2024</span>
+                    <div class="cv-bullet-container">
+                        <ul class="cv-line-text-bullet"> 
+                          <li>Developed firmware, vision and recognition features algorithm of a receptionist robot. Robot was able to detect humans in front of them and interact based on the person’s data from the database.</li>
+                          <li>Worked on Lithium Ion Batteries testing and data acquisition of battery parameters.</li>
+                          <li>Write a python script for data analysis and machine learning algorithm for battery degradation prediction.</li>
+                          <li>Developed firmware and implemented securities of  ESP8266 and ESP32 microcontrollers for electric vehicles.</li>
+                          <li>Worked with Aga Khan University and hospital to develop, train and deploy a CNN based system for chest trauma detection and classification using X-ray images.</li>
+                          <li>Designed and developed firmware and hardware of wireless wearable devices collaborated with Aga Khan University and hospital.</li>
+                          <li>Developed a python script to convert the dataset of fans from timestamp series format to the human date data format..</li>
+                          <li>Conduct study on different machine learning algorithms, classifiers and neural networks for predicting the preferred ceiling fan speed for a user based on the user's past usage data.</li>
+                          <li>Controlled and programmed 6 DoF Niryo Ned2 robotic arm with conveyor belt using computer vision to detect objects and 6 DoF Interbotix X-Series robotic arms.</li>
+                          <li>Worked on software of an assistive robot deployed at a local hospital in Karachi. Added software modules in the robot to do sentiment analysis, action recognition and social distancing verification between the patients, doctors and attendees.</li>
+                          <li>Worked on the development of firmware and wire harness of the robot and integration of sensors.</li>
+                          <li>Visited and inspected different companies and sites for the installation of Energy Monitoring system data acquisition cards and predictive maintenance nodes.</li>
+                          <li>Write research papers of journals and conferences, annual project and final project reports and grants.</li>
+                          <li>Supervised bachelor's thesis projects.</li>
+                        </ul>
+                      </div>
+                    <!-- <p class="cv-line-text">
+                      Conducted research on local Magnetometer to observe magnetic field effects due to sun storms. Designed robotic mechanisms for medical applications.
+                    </p> -->
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- Resume Section End -->
+    <!-- Resume Section End -->
+    
     <!-- Footer Section Start -->
     <footer class="footer-area section-padding">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <div class="footer-text text-center">
+                <a href="cv/Your_CV.pdf" download class="btn btn-primary cv-download-btn">
+                    Download CV
+                </a>
               <p>&copy; 2024 Portfolio. All rights reserved.</p>
             </div>
           </div>
