@@ -1,0 +1,27 @@
+#description {
+    display: flex; /* Enables side-by-side layout */
+    align-items: center; /* Aligns text and images */
+    justify-content: space-between; /* Adds spacing between text and images */
+    flex-wrap: wrap; /* Ensures responsiveness */
+    gap: 20px; /* Adds spacing between text and images */
+  }
+  
+  #description h2, #description p, #description ul {
+    width: 45%; /* Adjusts text width */
+  }
+  
+  .image-gallery {
+    width: 45%; /* Adjusts image gallery width */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Adds space between images */
+    justify-content: center;
+  }
+  
+  .image-gallery img {
+    width: 100%; /* Ensures images resize properly */
+    max-width: 250px; /* Adjusts image size */
+    height: auto;
+    border-radius: 5px; /* Optional: Adds rounded corners */
+  }
+  
