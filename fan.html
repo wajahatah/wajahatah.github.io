@@ -1,27 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Fan</title>
-    <link rel="stylesheet" href="assets/css/styles.css"> <!-- Link to your external CSS file -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Try</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/nav.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons/css/academicons.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css"> <!-- Link to your external CSS file -->
+    <link rel="stylesheet" href="assets/css/robodoc.css">
 </head>
+<script>
+    function goBack() {
+        window.history.back();
+}
+</script>
 <body>
+    <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
-        <div class="container">
-          <a href="project.html" class="navbar-brand"><img src="assets/img/logo.png" alt="" /></a>
-          </div>
-    </nav>
+      <!-- <div class="container"> -->
+        <!-- <a href="index.html" class="navbar-brand"><img src="assets/img/logo.png" alt="" /></a> -->
+        <a class="navbrand-name" class="nav-link" href="project.html">Projects</a>
+        <div class="collapse navbar-collapse" id="main-navbar">
+          <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
+            <li class="nav-item"><a class="nav-link active" href="robodoc.html">RoboDoc</a></li>
+            <li class="nav-item"><a class="nav-link" href="lucobot.html">LucoBot</a></li>
+            <li class="nav-item"><a class="nav-link" href="bike.html">Electric Bike</a></li>
+            <li class="nav-item"><a class="nav-link" href="instrux.html">InstruX</a></li>
+            <!-- <li class="nav-item"><a class="nav-link" href="fan.html">Smart Fan</a></li> -->
+            <li class="nav-item"><a class="nav-link" href="chest.html">Truma Detection</a></li>
+            <li class="nav-item"><a class="nav-link" href="qiyas.html">Qiyas</a></li>
+            <li class="nav-item"><a class="nav-link" href="ml.html">ML Algorithm</a></li>
+            <li class="nav-item"><a class="nav-link" href="cv.html">Computer Vision</a></li>
+          </ul>
+        </div>
+    </div>
     <button onclick="goBack()" class="back-button">
         <i class="fas fa-arrow-left"></i>
     </button>
-    
-<script>
-            function goBack() {
-                window.history.back();
+
+    <script>
+        function goBack() {
+            window.history.back();
     }
-</script>
+    </script>
+</nav>
     <!-- <header>
         <h2>RoboDoc</h2>
         <p>Brief overview of the project.</p>
