@@ -1,21 +1,3 @@
-/* body {
-    background: url("C:/wajahat/personal/wajahatah.github.io/assets/img/background/bg-1.jpg") no-repeat center center fixed;
-    background-size: cover;
-    filter: brightness(90%); /* Adjust brightness to make it lighter */
-/* }
-
-body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.5); /* Adjust opacity for lightness 
-    z-index: -1;
-} */ 
-
-
 #description-container {
     display: flex;
     align-items: center; 
@@ -28,15 +10,15 @@ body::before {
     font-weight: bold;
     align-items: center;
     /* color: #333; */
-    color: rgba(9, 250, 162, 0.966);
+    color: rgb(8, 112, 141);
 }
 #description-container h3 {
     font-size: 1.5em;
     /* font-weight: bold; */
     align-items: center;
     /* color: #333; */
+    color: rgb(8, 112, 141);
     /* color: rgb(100, 252, 138); */
-    color: rgba(9, 250, 162, 0.966);
 }
 
 .text-container {
@@ -50,8 +32,7 @@ body::before {
 }
 
 .image-container img {
-    width: 100%; 
+    width: 110%; 
     height: auto; 
     border-radius: 10px; /* Optional: Adds rounded corners */
 }
-
