@@ -1,0 +1,46 @@
+#description-container {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    gap: 20px; /* Adjust spacing between text and image */
+    padding: 100px;
+}
+#description-container h2 {
+    font-size: 2em;
+    font-weight: bold;
+    align-items: center;
+    /* color: #333; */
+    color: rgba(9, 30, 217, 0.966);
+}
+#description-container h3 {
+    font-size: 1.5em;
+    /* font-weight: bold; */
+    align-items: center;
+    /* color: #333; */
+    /* color: rgb(100, 252, 138); */
+    color: rgba(16, 36, 217, 0.966);
+    /* color: rgba(9, 250, 162, 0.966); */
+}
+
+.text-container {
+    flex: 1; /* Takes up 50% of the space */
+    max-width: 50%;
+}
+
+.image-container {
+    flex: 1; /* Takes up 50% of the space */
+    max-width: 50%;
+}
+
+.image-container img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
+.footer-area {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
