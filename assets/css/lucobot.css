@@ -1,27 +1,77 @@
-#description {
-    display: flex; /* Enables side-by-side layout */
-    align-items: center; /* Aligns text and images */
-    justify-content: space-between; /* Adds spacing between text and images */
-    flex-wrap: wrap; /* Ensures responsiveness */
-    gap: 20px; /* Adds spacing between text and images */
-  }
-  
-  #description h2, #description p, #description ul {
-    width: 45%; /* Adjusts text width */
-  }
-  
-  .image-gallery {
-    width: 45%; /* Adjusts image gallery width */
+/* #description-container {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px; /* Adds space between images */
+    align-items: center; /* Centers text and images vertically 
     justify-content: center;
-  }
-  
-  .image-gallery img {
-    width: 100%; /* Ensures images resize properly */
-    max-width: 250px; /* Adjusts image size */
+    gap: 50px; /* Space between text and images 
+    padding: 50px 100px;
+}
+
+.text-container {
+    flex: 1; /* Takes 50% of the space 
+    max-width: 50%;
+    text-align: left; /* Aligns text to the left 
+}
+
+.image-container {
+    flex: 1; /* Takes 50% of the space 
+    max-width: 50%;
+    display: flex;
+    flex-wrap: wrap; /* Ensures images stay side by side *
+    gap: 15px; /* Space between images *
+    justify-content: center; /* Centers images horizontally *
+}
+
+.image-container img {
+    width: 48%; /* Each image takes about half the container *
+    max-width: 250px; /* Ensures images don’t get too large *
     height: auto;
-    border-radius: 5px; /* Optional: Adds rounded corners */
-  }
-  
+    border-radius: 10px;
+} */
+
+
+#description-container {
+    display: flex;
+    align-items: center; /* Aligns text and images vertically */
+    justify-content: center;
+    gap: 50px; /* Space between text and images */
+    padding: 50px 100px;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+}
+
+.text-container {
+    flex: 1;
+    max-width: 50%;
+    text-align: left;
+}
+
+.image-container {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    border-radius: 10px;
+}
+
+#description-container h2 {
+    font-size: 2em;
+    font-weight: bold;
+    align-items: center;
+    /* color: #333; */
+    color: rgb(9, 200, 248);
+}
+#description-container h3 {
+    font-size: 1.5em;
+    /* font-weight: bold; */
+    align-items: center;
+    /* color: #333; */
+    color: rgb(9, 200, 248);
+    /* color: rgb(100, 252, 138); */
+}
