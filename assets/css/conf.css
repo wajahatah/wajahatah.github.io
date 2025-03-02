@@ -1,0 +1,119 @@
+/* #description-container {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    gap: 20px; /* Adjust spacing between text and image 
+    padding: 100px;
+}
+#description-container h2 {
+    font-size: 2em;
+    font-weight: bold;
+    align-items: center;
+    /* color: #333; 
+    color: rgba(9, 30, 217, 0.966);
+}
+#description-container h3 {
+    font-size: 1.5em;
+    /* font-weight: bold; 
+    align-items: center;
+    /* color: #333; */
+    /* color: rgb(100, 252, 138); 
+    color: rgba(42, 160, 166, 0.966);
+    /* color: rgba(9, 250, 162, 0.966); 
+}
+
+.text-container {
+    flex: 1; /* Takes up 50% of the space 
+    max-width: 50%;
+}
+
+.image-container {
+    flex: 1; /* Takes up 50% of the space 
+    max-width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.image-container img {
+    width: 48%;
+    max-width: 1000px;
+    height: auto;
+    border-radius: 10px;
+} */
+
+/* .footer-area {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  } */
+
+
+/* Main container */
+#description-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; /* Space between heading and content */
+    padding: 50px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Main heading */
+.main-heading {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: rgba(9, 30, 217, 0.966);
+}
+
+/* Sub-container: text and images in parallel */
+.sub-container {
+    display: flex;
+    flex-direction: row; /* Ensures text and images are side by side */
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px; /* Space between text and images */
+    max-width: 80%;
+    width: 100%;
+}
+
+/* Text section */
+.text-container {
+    flex: 1; /* Takes up 50% of the space */
+    max-width: 50%;
+    text-align: left;
+}
+
+/* Subheading */
+.text-container h3 {
+    font-size: 1.8em;
+    color: rgba(42, 160, 166, 0.966);
+}
+
+/* Paragraph styling */
+.text-container p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Image container */
+.image-container {
+    flex: 1; /* Takes up 50% of the space */
+    max-width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* Image styling */
+.image-container img {
+    width: 48%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
