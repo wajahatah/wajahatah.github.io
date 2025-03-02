@@ -71,6 +71,7 @@
 
 /* Sub-container: text and images in parallel */
 .sub-container {
+    padding: 50px;
     display: flex;
     flex-direction: row; /* Ensures text and images are side by side */
     align-items: center;
