@@ -1,35 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Try</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/nav.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons/css/academicons.min.css">
     <link rel="stylesheet" href="../assets/css/styles.css"> <!-- Link to your external CSS file -->
+    <link rel="stylesheet" href="../assets/css/expo.css">
 </head>
+<script>
+    function goBack() {
+        window.history.back();
+}
+</script>
 <body>
+    <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
-        <div class="container">
-          <a href="../activities.html" class="navbar-brand"><img src="../assets/img/logo.png" alt="" /></a>
-          </div>
-    </nav>
-    <section id="description">
-        <h2></h2>
-        <p> </p>
-    </section>
-    
-    <section id="video">
-        <div class="video-container">
-            <!-- <iframe src="https://drive.google.com/file/d/1tkIXkRa_5lDc_a2eNqRsttYqIETj_e0l/preview" width="640" height="480" allow="autoplay" frameborder="0" allowfullscreen></iframe> -->
+        <a class="navbrand-name" class="nav-link" href="project.html">Activities</a>
+        <div class="collapse navbar-collapse" id="main-navbar">
+          <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
+            <li class="nav-item"><a class="nav-link active" href="conf.html">Conferences & Workshops</a></li>
+            <li class="nav-item"><a class="nav-link" href="arm.html">Robotic Arm</a></li>
+            <li class="nav-item"><a class="nav-link" href="expo.html">Project Expos</a></li>
+            <!-- <li class="nav-item"><a class="nav-link" href="society.html">Student Societies Events</a></li> -->
+            <li class="nav-item"><a class="nav-link" href="fan.html">Industrial Visits</a></li>
+            <li class="nav-item"><a class="nav-link" href="chest.html">Social Work</a></li>
+            <!-- <li class="nav-item"><a class="nav-link" href="qiyas.html">Qiyas</a></li> -->
+            <!-- <li class="nav-item"><a class="nav-link" href="ml.html">ML Algorithm</a></li> -->
+            <!-- <li class="nav-item"><a class="nav-link" href="cv.html">Computer Vision</a></li> -->
+          </ul>
         </div>
-    </section>
-    
-    <section id="images">
-        <div class="image-gallery">
-            <!-- <a href="assets/img/robodoc/img-1.png" data-lightbox="robodoc-gallery" data-title="Image 1"> -->
-                <!-- <img src="assets/img/robodoc/img-1.png" alt="Image 1"> -->
-            </a>            
+    </div>
+    <button onclick="goBack()" class="back-button">
+        <i class="fas fa-arrow-left"></i>
+    </button>
+
+    <script>
+        function goBack() {
+            window.history.back();
+    }
+    </script>
+</nav>
+
+<section id="description-container">
+
+    <div class="sub-container">
+        <div class="text-container">
+            <h3>HVAC International Conference</h3>
+            <p> 
+            </p>
         </div>
-    </section>
+        <div class="media-container">
+            <!-- <iframe 
+                src="https://drive.google.com/file/d/1GZ0pAKOi0QTcwN5BxDRwe5b9AWlX93IH/preview" 
+                allow="autoplay"
+                allowfullscreen>
+            </iframe> -->
+            <!-- src="https://drive.google.com/file/d/1GZ0pAKOi0QTcwN5BxDRwe5b9AWlX93IH/preview" -->
+            <!-- <img src="../assets/img/conf/img3.JPG" alt="Image 1"> -->
+            <img src="../assets/img/society/img5.jpg" alt="Image 1">
+        </div>
+    </div>
+    
+     <div class="sub-container">
+        <div class="text-container">
+            <h3>STEMfest</h3>
+            <p> 
+            </p>
+        </div>
+        <div class="media-container">
+            <img src="../assets/img/society/img1.jpg" alt="Image 1">
+            <!-- <img src="../assets/img/arm/img2.jpg" alt="Image 1"> -->
+        </div>
+    </div>
+    
+    <!-- <div class="sub-container"> 
+        <div class="text-container">
+            <h3></h3>
+            <p>
+            </p>
+        </div>
+
+        <div class="media-container">
+            <img src="../assets/img/expo/.jpg" alt="Image 1">
+        </div>
+    </div>
+
+    <div class="sub-container">
+        <div class="text-container">
+            <h3>HEC Technology Showcase</h3>
+            <p> Present Final Year Design Project in HEC Technology Showcase.
+            </p>
+        </div>
+
+        <div class="media-container">
+            <img src="../assets/img/expo/img4.jpg" alt="Image 1">
+        </div>
+    </div> -->
+</section>
+
     <footer class="footer-area section-padding">
         <div class="container">
             <div class="row">
