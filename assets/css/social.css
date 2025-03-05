@@ -1,0 +1,77 @@
+/* Main container */
+#description-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; /* Space between heading and content */
+    padding: 50px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Main heading */
+.main-heading {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: rgba(9, 30, 217, 0.966);
+}
+
+/* Sub-container: text and media in parallel */
+.sub-container {
+    padding: 50px;
+    display: flex;
+    flex-direction: row; /* Ensures text and media are side by side */
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px; /* Space between text and media */
+    max-width: 80%;
+    width: 100%;
+}
+
+/* Text section */
+.text-container {
+    flex: 1; /* Takes up 50% of the space */
+    max-width: 50%;
+    text-align: left;
+}
+
+/* Subheading */
+.text-container h3 {
+    font-size: 1.8em;
+    color: rgba(42, 102, 166, 0.87);
+}
+
+/* Paragraph styling */
+.text-container p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Media container */
+.media-container {
+    flex: 1; /* Takes up 50% of the space */
+    max-width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* Styling for both images and videos */
+.media-container img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    /* height: 5px; */
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Styling for embedded video (iframe) */
+.media-container iframe {
+    width: 100%;
+    max-width: 200px;  /* Same width as the image */
+    height: 280px;  /* Adjust height to match aspect ratio */
+    border-radius: 10px;
+    border: none;
+}
