@@ -5,17 +5,9 @@
     width: 100%;
   } */
 
-.awards {
-    /* background-color: #f8f9fa; Light gray background */
-    background-color: #e2e2e2; /* Light gray background */
-    padding: 15px;
-    margin-top: 20px;
-    border-radius: 8px;
-    border-left: 5px solid #000204; 
-    }
-    /* Blue left border for emphasis 
-    
-.awards h3 {
+  /* Blue left border for emphasis 
+  
+  .awards h3 {
     color: #007bff; /* Blue heading 
     margin-bottom: 10px;
 }
@@ -32,6 +24,17 @@
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 } */
+.awards {
+    background-color: #e2e2e2; /* Light gray background */
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #000204; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    }
 
 .separator {
     width: 100%;
@@ -42,12 +45,82 @@
 }
 
 .award-box {
-    width: 200px;  /* Adjust the width */
-    height: 150px; /* Adjust the height */
-    border: 2px solid #ccc;
     display: flex;
     align-items: center;
-    justify-content: center;
+    gap: 15px;
+    /* width: 200px;  Adjust the width */
+    width: 100%;
+    padding: 10px;
+    /* height: 150px; */
+    /* border: 2px solid #ccc; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    justify-content: space-between;
     /* background: white; */
     background: #e3e3e3;
+    border-radius: 8px;
+}
+
+/* .awards-text {
+    flex: 1;
+    font-size: 1.2em;
+    color: #333;
+} */
+
+/* .award-text-container {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+} */
+
+/* Main heading inside the award box */
+/* .award-title {
+    font-size: 2em;
+    font-weight: bold;
+
+    color: #333;
+} */
+
+/* Description inside the award box */
+.award-description {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.award-image {
+    width: 150px; /* Adjust size as needed */
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Media container */
+.media-container {
+    flex: 1; /* Takes up 50% of the space */
+    max-width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* Styling for both images and videos */
+.media-container img {
+    width: 100%;
+    max-width: 50px;
+    height: 50px;
+    /* height: 5px; */
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Styling for embedded video (iframe) */
+.media-container iframe {
+    width: 100%;
+    max-width: 200px;  /* Same width as the image */
+    height: 280px;  /* Adjust height to match aspect ratio */
+    border-radius: 10px;
+    border: none;
 }
