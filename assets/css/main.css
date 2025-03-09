@@ -200,7 +200,8 @@ button:focus {
 
 .social-icon li a {
   color: #000;
-  background: #fff;
+  /* background: #fff; */
+  background: #f0f0f0;
   width: 35px;
   height: 35px;
   line-height: 38px;
