@@ -1,0 +1,59 @@
+#activity {
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.box {
+    flex: 1;
+    min-width: 250px;
+    max-width: 30%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    justify-content: center;
+    padding: 15px;
+    height: auto; /* Allows the height to be dynamic */
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+}
+
+.box h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.box p {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.box a {
+    text-decoration: none;
+    color: inherit;
+}
