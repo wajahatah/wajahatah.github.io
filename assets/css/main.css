@@ -1094,10 +1094,13 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   font-size: 14px;
   margin-top: 20px;
   color: #fff;
+  justify-content: center;
 }
 
 .footer-area .footer-text p a {
   color: #00b4d9;
+  justify-content: center;
+
 }
 
 .footer-area .footer-text .nav-inline .nav-link {
@@ -1153,10 +1156,14 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   line-height: 42px;
   color: #fff;
   margin: 0;
+  justify-content: center;
+  text-align: center;
 }
 
 #copyright p a {
   color: #fff;
+  justify-content: center;
+
 }
 
 #copyright p a:hover {
