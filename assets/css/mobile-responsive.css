@@ -73,16 +73,24 @@
     .text-container {
         width: 100%;
         margin-bottom: 20px;
+        max-width: 100%;
+        text-align: left; /* Align text to the left */
+        flex: 1;
     }
 
     .text-container h2 {
-        color: #333; /* Original heading color */
+        /* color: #333; Original heading color */
+        color: #00b4d9; /* Original heading color */
+        font-size: 2em;
+        font-weight: bold;
         margin-bottom: 15px;
+        text-align: center;
     }
 
     .text-container p {
         margin-bottom: 15px;
         line-height: 1.6;
+        text-align: left; /* Align text to the left */
     }
 
     .text-container ul {
@@ -91,14 +99,22 @@
     }
 
     .image-container {
-        width: 100%;
+        width: 150%;
         margin: 20px 0;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+        justify-content: center; /* Center images */
+        gap: 15px; /* Space between images */
+        flex: 1;
     }
 
     .image-container img {
         width: 100%;
         height: auto;
         border-radius: 8px;
+        object-fit: cover;
+        justify-content: center;
     }
 
     /* Video Container */
