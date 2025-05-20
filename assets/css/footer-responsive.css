@@ -1,0 +1,16 @@
+/* Footer styles for desktop mode */
+.footer-area {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /* background-color: #333; */
+    z-index: 1000;
+}
+
+/* Footer styles for mobile/toggle mode */
+@media screen and (max-width: 768px) {
+    .footer-area {
+        position: relative;
+        bottom: auto;
+    }
+} 
