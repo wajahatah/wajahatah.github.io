@@ -108,3 +108,10 @@
     margin-top: 0px;
     /* nav-right: 10px; */
   }
+
+  .navbar-nav .nav-item .active {
+    text-decoration: underline;
+    /* color: #00e5ff !important; */
+    color: #00b4d9 !important;
+    font-weight: bold;
+  }
