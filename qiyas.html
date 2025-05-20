@@ -2,56 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Qiyas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qiyas - Exam Center</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/nav.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons/css/academicons.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css"> <!-- Link to your external CSS file -->
+    <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/qiyas.css">
+    <link rel="stylesheet" href="assets/css/mobile-responsive.css">
 </head>
 <script>
     function goBack() {
         window.history.back();
-}
+    }
 </script>
 <body>
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
-      <!-- <div class="container"> -->
-        <!-- <a href="index.html" class="navbar-brand"><img src="assets/img/logo.png" alt="" /></a> -->
-        <a class="navbrand-name" class="nav-link" href="project.html">Projects</a>
-        <div class="collapse navbar-collapse" id="main-navbar">
-          <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
-            <li class="nav-item"><a class="nav-link active" href="robodoc.html">RoboDoc</a></li>
-            <li class="nav-item"><a class="nav-link" href="lucobot.html">LucoBot</a></li>
-            <li class="nav-item"><a class="nav-link" href="bike.html">Electric Bike</a></li>
-            <li class="nav-item"><a class="nav-link" href="instrux.html">InstruX</a></li>
-            <li class="nav-item"><a class="nav-link" href="fan.html">Smart Fan</a></li>
-            <li class="nav-item"><a class="nav-link" href="chest.html">Truma Detection</a></li>
-            <!-- <li class="nav-item"><a class="nav-link" href="qiyas.html">Qiyas</a></li> -->
-            <li class="nav-item"><a class="nav-link" href="ml.html">ML Algorithm</a></li>
-            <li class="nav-item"><a class="nav-link" href="cv.html">Computer Vision</a></li>
-          </ul>
+        <div class="container">
+            <a class="navbrand-name" href="project.html">Projects</a>
+            <button onclick="goBack()" class="back-button">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+            <div class="menu-toggle" id="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="collapse navbar-collapse" id="main-navbar">
+                <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
+                    <li class="nav-item"><a class="nav-link" href="robodoc.html">RoboDoc</a></li>
+                    <li class="nav-item"><a class="nav-link" href="lucobot.html">LucoBot</a></li>
+                    <li class="nav-item"><a class="nav-link" href="bike.html">Electric Bike</a></li>
+                    <li class="nav-item"><a class="nav-link" href="instrux.html">InstruX</a></li>
+                    <li class="nav-item"><a class="nav-link" href="fan.html">Smart Fan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="chest.html">Truma Detection</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="qiyas.html">Qiyas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ml.html">ML Algorithm</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cv.html">Computer Vision</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
-    <button onclick="goBack()" class="back-button">
-        <i class="fas fa-arrow-left"></i>
-    </button>
-
-    <script>
-        function goBack() {
-            window.history.back();
-    }
-    </script>
-</nav>
-
-    <!-- <header>
-        <h2>RoboDoc</h2>
-        <p>Brief overview of the project.</p>
-    </header> -->
+    </nav>
+    <!-- Navbar End -->
 
     <section id="description-container">
         <div class="text-container">
@@ -69,58 +64,13 @@
                 RTSP cameras for seamless real-time processing in production 
                 environments. Conducted rigorous testing and evaluation using 
                 35 training videos to validate model performance.</p>
-
         </div>
 
         <div class="image-container">
-            <img src="assets/img/qiyas/img-2.png" alt="">
-            
-        <!-- <ul>
-            <li>Develop firmware for locomotion, haptic feedback and precise placement of sensors to get patients vitals.</li>
-            <li>Designed and developed a light weight, low-cost robotic body for locomotion.</li>
-            <li>Built and deployed the robot in a local hospital in Karachi.</li>
-            <li>Developed a computer vision algorithm for action recognition, sentimental analysis, and object detection model.</li>
-            <li>Built and deployed sensors and camera with microprocessor using BLE (bluetooth low energy) and dashboard through MQTT (message queuing telemetry transport) protocol.</li>
-            <li>Wrote annual and final reports for the project.</li>
-        </ul> -->
-    <!-- </section> -->
-    <!-- <section id="video"> -->
-        <!-- <div class="video-container"> -->
-            <!-- <iframe src="https://drive.google.com/file/d/1tkIXkRa_5lDc_a2eNqRsttYqIETj_e0l/preview" width="640" height="480" allow="autoplay" frameborder="0" allowfullscreen></iframe> -->
-        <!-- </div> -->
-    <!-- </section> -->
-    
-    <!-- <section id="images"> -->
-        <!-- <div class="image-gallery"> -->
-            <!-- <a href="assets/img/robodoc/img-1.png" data-lightbox="robodoc-gallery" data-title="Image 1"> -->
-                <!-- <img src="assets/img/robodoc/img-1.png" alt="Image 1"> -->
-            <!-- </a>             -->
+            <img src="assets/img/qiyas/img-2.png" alt="Qiyas Exam Center System">
         </div>
     </section>
-    
-    <!-- <section id="video">
-        <h2>Project Video</h2>
-        <video controls>
-            <source src="assets/img/fan/Snapchat-1007802866.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </section> -->
 
-    <!-- <section id="images"> -->
-        <!-- <h2>Project Images</h2> -->
-        <!-- <div class="image-gallery"> -->
-            <!-- <img src="assets/img/chest/Picture1.jpg" alt="Image 1"> -->
-            <!-- <img src="assets/img/chest/Picture2.png" alt="Image 2"> -->
-            <!-- <img src="assets/img/instrux/pic1.jpg" alt="Image 3"> -->
-        <!-- </div> -->
-    <!-- </section> -->
-
-
-    <!-- <section id="github">
-        <h2>GitHub Repository</h2>
-        <p>Access the source code and documentation on GitHub:</p>
-        <a href="https://github.com/yourusername/project1" target="_blank">https://github.com/yourusername/project1</a>
-    </section> -->
     <footer class="footer-area section-padding">
         <div class="container">
             <div class="row">
@@ -132,8 +82,36 @@
             </div>
         </div>
     </footer>
-    <!-- <footer>
-        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
-    </footer> -->
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.getElementById('menu-toggle');
+            const navbarCollapse = document.getElementById('main-navbar');
+            
+            menuToggle.addEventListener('click', function() {
+                menuToggle.classList.toggle('active');
+                navbarCollapse.classList.toggle('show');
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', function(event) {
+                const isClickInside = navbarCollapse.contains(event.target) || menuToggle.contains(event.target);
+                
+                if (!isClickInside && navbarCollapse.classList.contains('show')) {
+                    navbarCollapse.classList.remove('show');
+                    menuToggle.classList.remove('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>

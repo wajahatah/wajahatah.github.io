@@ -2,212 +2,153 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Try</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Computer Vision</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/nav.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons/css/academicons.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css"> <!-- Link to your external CSS file -->
+    <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/vision.css">
+    <link rel="stylesheet" href="assets/css/mobile-responsive.css">
 </head>
 <script>
     function goBack() {
         window.history.back();
-}
+    }
 </script>
 <body>
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
-      <!-- <div class="container"> -->
-        <!-- <a href="index.html" class="navbar-brand"><img src="assets/img/logo.png" alt="" /></a> -->
-        <a class="navbrand-name" class="nav-link" href="project.html">Projects</a>
-        <div class="collapse navbar-collapse" id="main-navbar">
-          <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
-            <li class="nav-item"><a class="nav-link" href="robodoc.html">RoboDoc</a></li>
-            <li class="nav-item"><a class="nav-link" href="lucobot.html">LucoBot</a></li>
-            <li class="nav-item"><a class="nav-link" href="bike.html">Electric Bike</a></li>
-            <li class="nav-item"><a class="nav-link" href="instrux.html">InstruX</a></li>
-            <li class="nav-item"><a class="nav-link" href="fan.html">Smart Fan</a></li>
-            <li class="nav-item"><a class="nav-link" href="chest.html">Truma Detection</a></li>
-            <li class="nav-item"><a class="nav-link" href="qiyas.html">Qiyas</a></li>
-            <li class="nav-item"><a class="nav-link" href="ml.html">ML Algorithm</a></li>
-            <!-- <li class="nav-item"><a class="nav-link" href="cv.html">Computer Vision</a></li> -->
-          </ul>
+        <div class="container">
+            <a class="navbrand-name" href="project.html">Projects</a>
+            <button onclick="goBack()" class="back-button">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+            <div class="menu-toggle" id="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="collapse navbar-collapse" id="main-navbar">
+                <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
+                    <li class="nav-item"><a class="nav-link" href="robodoc.html">RoboDoc</a></li>
+                    <li class="nav-item"><a class="nav-link" href="lucobot.html">LucoBot</a></li>
+                    <li class="nav-item"><a class="nav-link" href="bike.html">Electric Bike</a></li>
+                    <li class="nav-item"><a class="nav-link" href="instrux.html">InstruX</a></li>
+                    <li class="nav-item"><a class="nav-link" href="fan.html">Smart Fan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="chest.html">Truma Detection</a></li>
+                    <li class="nav-item"><a class="nav-link" href="qiyas.html">Qiyas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ml.html">ML Algorithm</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="cv.html">Computer Vision</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
-    <button onclick="goBack()" class="back-button">
-        <i class="fas fa-arrow-left"></i>
-    </button>
+    </nav>
+    <!-- Navbar End -->
 
-    <script>
-        function goBack() {
-            window.history.back();
-    }
-    </script>
-</nav>
+    <section id="description-container">
+        <div class="text-container">
+            <h2>Computer Vision Projects</h2>
+            <p>Various computer vision projects showcasing different applications and techniques.</p>
+        </div>
+    </section>
 
-<!-- <section id="description-container"> -->
-    <!-- <div class="text-container"> -->
-        <!-- <div class="text-container"> -->
-            <!-- <h2>Computer Vision</h2> -->
-        <!-- </div> -->
-        <!-- <p>A doctor assistive robot to isolate patient and doctor in the situation of COVID-19 pandemic. Equipped with sensors for real-time patient vitals monitoring, vision algorithms for facial expression detection, and a dashboard for detailed data visualization, streamlining patient care for medical professionals.</p> -->
-        
-        <!-- <div class="text-container"> -->
-        <!-- <h3>Food Ingredient Detection</h3> -->
-        <!-- <p>A user could scan images of grocery items in the system, and the 
-            neural network predicted food recipes that can be made using 
-            those ingredients. Develop a 3 layer shallow CNN network for the detection of food 
-            ingredient using MobileNetV2 model as a pre trained weights. 
-            Integrate model in the flask.</p> -->
-        <!-- <ul> -->
-            <!-- <li></li> -->
-            <!-- <li></li> -->
-        <!-- </ul> -->
-    <!-- </div> -->
+    <section id="description-container">
+        <div class="text-container">
+            <h3>Food Ingredient Detection</h3>
+            <p>A user could scan images of grocery items in the system, and the 
+                neural network predicted food recipes that can be made using 
+                those ingredients. Develop a 3 layer shallow CNN network for the detection of food 
+                ingredient using MobileNetV2 model as a pre trained weights. 
+                Integrate model in the flask.</p>
+        </div>
 
-    <!-- <div class="image-container"> -->
-        <!-- <img src="assets/img/vision/img-1.png" alt=""> -->
-        <!-- <button onclick="goBack()" class="back-button">
-            <i class="fas fa-arrow-left"></i>
-        </button> -->
-    <!-- </div> -->
-<!-- </section> -->
+        <div class="image-container">
+            <img src="assets/img/vision/img-1.png" alt="Food Ingredient Detection">
+        </div>
+    </section>
 
-<section id="description-container">
-    <div class="text-container">
-        <!-- <div class="text-container"> -->
-            <!-- <h2>Computer Vision</h2> -->
-        <!-- </div> -->
-        <!-- <p>A doctor assistive robot to isolate patient and doctor in the situation of COVID-19 pandemic. Equipped with sensors for real-time patient vitals monitoring, vision algorithms for facial expression detection, and a dashboard for detailed data visualization, streamlining patient care for medical professionals.</p> -->
-        
-        <!-- <div class="text-container"> -->
-        <h3>Food Ingredient Detection</h3>
-        <p>A user could scan images of grocery items in the system, and the 
-            neural network predicted food recipes that can be made using 
-            those ingredients. Develop a 3 layer shallow CNN network for the detection of food 
-            ingredient using MobileNetV2 model as a pre trained weights. 
-            Integrate model in the flask.</p>
-        <!-- <ul> -->
-            <!-- <li></li> -->
-            <!-- <li></li> -->
-        <!-- </ul> -->
-    </div>
+    <section id="description-container">
+        <div class="text-container">
+            <h3>Pig Unloading Detection</h3>
+            <p>Train Yolo V11 detection model on the customized data set for the 
+                detection of Human, Pig and Paddle.</p>
+        </div>
 
-    <div class="image-container">
-        <img src="assets/img/vision/img-1.png" alt="">
-        <!-- <button onclick="goBack()" class="back-button">
-            <i class="fas fa-arrow-left"></i>
-        </button> -->
-    </div>
-</section>
+        <div class="image-container">
+            <img src="assets/img/vision/pig2.png" alt="Pig Unloading Detection">
+        </div>
+    </section>
 
-<section id="description-container">
-    <div class="text-container">
-        <!-- <div class="text-container"> -->
-            <!-- <h2>Computer Vision</h2> -->
-        <!-- </div> -->
-        <!-- <p>A doctor assistive robot to isolate patient and doctor in the situation of COVID-19 pandemic. Equipped with sensors for real-time patient vitals monitoring, vision algorithms for facial expression detection, and a dashboard for detailed data visualization, streamlining patient care for medical professionals.</p> -->
-        
-        <!-- <div class="text-container"> -->
-        <h3>Pig Unloading Detection</h3>
-        <p>Train Yolo V11 detection model on the customized data set for the 
-            detection of Human, Pig and Paddle.
-        </p>
-        <!-- <ul> -->
-            <!-- <li></li> -->
-            <!-- <li></li> -->
-        <!-- </ul> -->
-    </div>
+    <section id="description-container">
+        <div class="text-container">
+            <h3>Urban Planning System</h3>
+            <p>Used Yolo model for detection of cars and bikes for traffic 
+                management, urban surveillance and safety measures with customized
+                data.</p>
+        </div>
+    </section>
 
-    <div class="image-container">
-        <img src="assets/img/vision/pig2.png" alt="">
-        <!-- <button onclick="goBack()" class="back-button">
-            <i class="fas fa-arrow-left"></i>
-        </button> -->
-    </div>
-</section>
+    <section id="description-container">
+        <div class="text-container">
+            <h3>Construction site security compliance system</h3>
+            <p>A vision (CNN) based system to ensure safety compliance by 
+                detecting people having inadequate safety equipment like helmets, 
+                and tools.</p>
+        </div>
+    </section>
 
+    <section id="description-container">
+        <div class="text-container">
+            <h3>Fire detection</h3>
+            <p>Detect fire in warehouses by processing CCTV footage using vision 
+                algorithms.</p>
+        </div>
+    </section>
 
-<section id="description-container">
-    <div class="text-container">
-        <!-- <h2>Computer Vision</h2> -->
-        <!-- <p>A doctor assistive robot to isolate patient and doctor in the situation of COVID-19 pandemic. Equipped with sensors for real-time patient vitals monitoring, vision algorithms for facial expression detection, and a dashboard for detailed data visualization, streamlining patient care for medical professionals.</p> -->
-
-        <h3>Urban Planning System</h3>
-        <p>Used Yolo model for detection of cars and bikes for traffic 
-            management, urban surveillance and safety measures with customized
-            data.</p>
-        <!-- <ul> -->
-            <!-- <li></li> -->
-            <!-- <li></li> -->
-        <!-- </ul> -->
-    </div>
-
-    <div class="image-container">
-        <!-- <img src="assets/img/robodoc/img-1.png" alt="RoboDoc Image"> -->
-        <!-- <button onclick="goBack()" class="back-button">
-            <i class="fas fa-arrow-left"></i>
-        </button> -->
-    </div>
-</section>
-<section id="description-container">
-    <div class="text-container">
-        <!-- <h2>Computer Vision</h2> -->
-        <!-- <p>A doctor assistive robot to isolate patient and doctor in the situation of COVID-19 pandemic. Equipped with sensors for real-time patient vitals monitoring, vision algorithms for facial expression detection, and a dashboard for detailed data visualization, streamlining patient care for medical professionals.</p> -->
-
-        <h3>Construction site security compliance system</h3>
-        <p>A vision (CNN) based system to ensure safety compliance by 
-            detecting people having inadequate safety equipment like helmets, 
-            and tools.</p>
-        <!-- <ul> -->
-            <!-- <li></li> -->
-            <!-- <li></li> -->
-        <!-- </ul> -->
-    </div>
-
-    <div class="image-container">
-        <!-- <img src="assets/img/robodoc/img-1.png" alt="RoboDoc Image"> -->
-        <!-- <button onclick="goBack()" class="back-button">
-            <i class="fas fa-arrow-left"></i>
-        </button> -->
-    </div>
-</section>
-<section id="description-container">
-    <div class="text-container">
-        <!-- <h2>Computer Vision</h2> -->
-        <!-- <p>A doctor assistive robot to isolate patient and doctor in the situation of COVID-19 pandemic. Equipped with sensors for real-time patient vitals monitoring, vision algorithms for facial expression detection, and a dashboard for detailed data visualization, streamlining patient care for medical professionals.</p> -->
-
-        <h3>Fire detection</h3>
-        <p>Detect fire in warehouses by processing CCTV footage using vision 
-            algorithms.</p>
-        <!-- <ul> -->
-            <!-- <li></li> -->
-            <!-- <li></li> -->
-        <!-- </ul> -->
-    </div>
-
-    <div class="image-container">
-        <!-- <img src="assets/img/robodoc/img-1.png" alt="RoboDoc Image"> -->
-        <!-- <button onclick="goBack()" class="back-button">
-            <i class="fas fa-arrow-left"></i>
-        </button> -->
-    </div>
-</section>
-
-<footer class="footer-area section-padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="footer-text text-center">
-                    <p>&copy; All rights reserved to Wajahat Ahmed.</p>
+    <footer class="footer-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer-text text-center">
+                        <p>&copy; All rights reserved to Wajahat Ahmed.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.getElementById('menu-toggle');
+            const navbarCollapse = document.getElementById('main-navbar');
+            
+            menuToggle.addEventListener('click', function() {
+                menuToggle.classList.toggle('active');
+                navbarCollapse.classList.toggle('show');
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', function(event) {
+                const isClickInside = navbarCollapse.contains(event.target) || menuToggle.contains(event.target);
+                
+                if (!isClickInside && navbarCollapse.classList.contains('show')) {
+                    navbarCollapse.classList.remove('show');
+                    menuToggle.classList.remove('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
