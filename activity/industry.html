@@ -2,96 +2,97 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Try</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Industrial Visits</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="../assets/css/nav.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons/css/academicons.min.css">
-    <link rel="stylesheet" href="../assets/css/styles.css"> <!-- Link to your external CSS file -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
     <link rel="stylesheet" href="../assets/css/industry.css">
+    <link rel="stylesheet" href="../assets/css/mobile-responsive.css">
 </head>
 <script>
     function goBack() {
         window.history.back();
-}
+    }
 </script>
 <body>
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
-        <a class="navbrand-name" class="nav-link" href="../activities.html">Activities</a>
-        <div class="collapse navbar-collapse" id="main-navbar">
-          <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
-            <li class="nav-item"><a class="nav-link active" href="conf.html">Conferences & Workshops</a></li>
-            <li class="nav-item"><a class="nav-link" href="arm.html">Robotic Arm</a></li>
-            <li class="nav-item"><a class="nav-link" href="expo.html">Project Expos</a></li>
-            <li class="nav-item"><a class="nav-link" href="society.html">Student Societies Events</a></li>
-            <!-- <li class="nav-item"><a class="nav-link" href="industry.html">Industrial Visits</a></li> -->
-            <li class="nav-item"><a class="nav-link" href="social.html">Social Work</a></li>
-            <!-- <li class="nav-item"><a class="nav-link" href="qiyas.html">Qiyas</a></li> -->
-            <!-- <li class="nav-item"><a class="nav-link" href="ml.html">ML Algorithm</a></li> -->
-            <!-- <li class="nav-item"><a class="nav-link" href="cv.html">Computer Vision</a></li> -->
-          </ul>
+        <div class="container">
+            <a class="navbrand-name" href="../activities.html">Activities</a>
+            <button onclick="goBack()" class="back-button">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+            <div class="menu-toggle" id="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="collapse navbar-collapse" id="main-navbar">
+                <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
+                    <li class="nav-item"><a class="nav-link" href="conf.html">Conferences & Workshops</a></li>
+                    <li class="nav-item"><a class="nav-link" href="arm.html">Robotic Arm</a></li>
+                    <li class="nav-item"><a class="nav-link" href="expo.html">Project Expos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="society.html">Student Societies Events</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="industry.html">Industrial Visits</a></li>
+                    <li class="nav-item"><a class="nav-link" href="social.html">Social Work</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
-    <button onclick="goBack()" class="back-button">
-        <i class="fas fa-arrow-left"></i>
-    </button>
+    </nav>
+    <!-- Navbar End -->
 
-    <script>
-        function goBack() {
-            window.history.back();
-    }
-    </script>
-</nav>
-
-<section id="description-container">
-
-    <div class="sub-container">
+    <section id="description-container">
         <div class="text-container">
-            <h3>Dawlance </h3>
-            <p> Visit industry multiple times for the deployment of the predictive maintenance 
-                system in the production line.
-            </p>
+            <h2>Industrial Visits</h2>
+            <p>Engaging with industry partners for project deployment and implementation, gaining hands-on experience in real-world applications.</p>
         </div>
+    </section>
+
+    <section id="description-container">
+        <div class="text-container">
+            <h3>Dawlance</h3>
+            <p>Conducted multiple visits to the industry for the deployment of the predictive maintenance 
+               system in the production line, ensuring seamless integration and optimal performance.</p>
+        </div>
+
         <div class="media-container">
-            <img src="../assets/img/industry/img3.jpg" alt="Image 1">
+            <img src="../assets/img/industry/img3.jpg" alt="Dawlance Factory Visit">
         </div>
-    </div>
-    
-     <div class="sub-container">
+    </section>
+
+    <section id="description-container">
         <div class="text-container">
             <h3>Agri Autos</h3>
-            <p> Visit industry for the deployment of energy monitoring system InstruX in the whole
-                industry.
-            </p>
-        </div>
-        <div class="media-container">
-            <img src="../assets/img/industry/img5.jpg" alt="Image 1">
-            <img src="../assets/img/industry/img2.jpg" alt="Image 1">
-        </div>
-    </div>
-    </div>
-    
-    <div class="sub-container"> 
-        <div class="text-container">
-            <h3>Continental Production Plant</h3>
-            <p> Multiple visits of plant for the setup of the production line of the Electric Bikes.
-            </p>
+            <p>Visited the industry for the deployment of the energy monitoring system InstruX, 
+               implementing comprehensive monitoring solutions across the entire facility.</p>
         </div>
 
         <div class="media-container">
-            <img src="../assets/img/industry/img4.jpg" alt="Image 1">
+            <img src="../assets/img/industry/img5.jpg" alt="Agri Autos Installation">
+            <img src="../assets/img/industry/img2.jpg" alt="Energy Monitoring System">
+        </div>
+    </section>
+
+    <section id="description-container">
+        <div class="text-container">
+            <h3>Continental Production Plant</h3>
+            <p>Conducted multiple visits to the plant for setting up the production line of Electric Bikes, 
+               ensuring efficient manufacturing processes and quality control.</p>
+        </div>
+
+        <div class="media-container">
+            <img src="../assets/img/industry/img4.jpg" alt="Continental Plant Setup">
             <iframe 
                 src="https://drive.google.com/file/d/173nLD3cG_4HLfCOYxkZBmpJUWRSdBhdp/preview" 
                 allow="autoplay"
                 allowfullscreen>
             </iframe>
         </div>
-    </div>
-
-</section>
+    </section>
 
     <footer class="footer-area section-padding">
         <div class="container">
@@ -104,5 +105,36 @@
             </div>
         </div>
     </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.getElementById('menu-toggle');
+            const navbarCollapse = document.getElementById('main-navbar');
+            
+            menuToggle.addEventListener('click', function() {
+                menuToggle.classList.toggle('active');
+                navbarCollapse.classList.toggle('show');
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', function(event) {
+                const isClickInside = navbarCollapse.contains(event.target) || menuToggle.contains(event.target);
+                
+                if (!isClickInside && navbarCollapse.classList.contains('show')) {
+                    navbarCollapse.classList.remove('show');
+                    menuToggle.classList.remove('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>

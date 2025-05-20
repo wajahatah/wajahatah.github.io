@@ -2,145 +2,106 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Try</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conferences & Workshops</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="../assets/css/nav.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons/css/academicons.min.css">
-    <link rel="stylesheet" href="../assets/css/styles.css"> <!-- Link to your external CSS file -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
     <link rel="stylesheet" href="../assets/css/conf.css">
+    <link rel="stylesheet" href="../assets/css/mobile-responsive.css">
 </head>
 <script>
     function goBack() {
         window.history.back();
-}
+    }
 </script>
 <body>
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
-      <!-- <div class="container"> -->
-        <!-- <a href="index.html" class="navbar-brand"><img src="assets/img/logo.png" alt="" /></a> -->
-        <a class="navbrand-name" class="nav-link" href="../activities.html">Activities</a>
-        <div class="collapse navbar-collapse" id="main-navbar">
-          <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
-            <!-- <li class="nav-item"><a class="nav-link active" href="conf.html">Conferences & Workshops</a></li> -->
-            <li class="nav-item"><a class="nav-link" href="arm.html">Robotic Arm</a></li>
-            <li class="nav-item"><a class="nav-link" href="expo.html">Project Expos</a></li>
-            <li class="nav-item"><a class="nav-link" href="society.html">Student Societies Events</a></li>
-            <li class="nav-item"><a class="nav-link" href="industry.html">Industrial Visits</a></li>
-            <li class="nav-item"><a class="nav-link" href="social.html">Social Work</a></li>
-            <!-- <li class="nav-item"><a class="nav-link" href="qiyas.html">Qiyas</a></li> -->
-            <!-- <li class="nav-item"><a class="nav-link" href="ml.html">ML Algorithm</a></li> -->
-            <!-- <li class="nav-item"><a class="nav-link" href="cv.html">Computer Vision</a></li> -->
-          </ul>
+        <div class="container">
+            <a class="navbrand-name" href="../activities.html">Activities</a>
+            <button onclick="goBack()" class="back-button">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+            <div class="menu-toggle" id="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="collapse navbar-collapse" id="main-navbar">
+                <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
+                    <li class="nav-item"><a class="nav-link active" href="conf.html">Conferences & Workshops</a></li>
+                    <li class="nav-item"><a class="nav-link" href="arm.html">Robotic Arm</a></li>
+                    <li class="nav-item"><a class="nav-link" href="expo.html">Project Expos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="society.html">Student Societies Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="industry.html">Industrial Visits</a></li>
+                    <li class="nav-item"><a class="nav-link" href="social.html">Social Work</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
-    <button onclick="goBack()" class="back-button">
-        <i class="fas fa-arrow-left"></i>
-    </button>
+    </nav>
+    <!-- Navbar End -->
 
-    <script>
-        function goBack() {
-            window.history.back();
-    }
-    </script>
-</nav>
-
-<section id="description-container">
-    <!-- Main heading -->
-    <!-- <div class="main-heading">LucoBot</div> -->
-
-    <!-- Sub-container with text and images side by side -->
-    <div class="sub-container">
-        <!-- Text section -->
+    <section id="description-container">
         <div class="text-container">
-            <h3>Magntometer Conference and Workshop</h3>
-            <p>Held Conference and Workshop with the colaboration of SUPARCO on Magnetometer
-                and its application in space and earth sciences.
-            </p>
+            <h2>Conferences & Workshops</h2>
+            <p>Active participation in various conferences and workshops, sharing knowledge and expertise in robotics, machine learning, and engineering.</p>
+        </div>
+    </section>
+
+    <section id="description-container">
+        <div class="text-container">
+            <h3>Magnetometer Conference and Workshop</h3>
+            <p>Held Conference and Workshop with the collaboration of SUPARCO on Magnetometer
+                and its application in space and earth sciences.</p>
         </div>
 
-        <!-- Image section -->
         <div class="image-container">
-            <img src="../assets/img/conf/img3.JPG" alt="Image 1">
-            <img src="../assets/img/conf/img4.JPG" alt="Image 1">
-            <!-- <img src="assets/img/lucobot/IMG_20240625_125031054.jpg" alt="Image 2"> -->
+            <img src="../assets/img/conf/img3.JPG" alt="Magnetometer Conference">
+            <img src="../assets/img/conf/img4.JPG" alt="Workshop Session">
         </div>
-    </div>
-    
-    <div class="sub-container">
-        <!-- Text section -->
+    </section>
+
+    <section id="description-container">
         <div class="text-container">
             <h3>Robotics Workshop</h3>
-            <p>Give the demonstration of LucoBot to the students and 
-                teachers of Becone House School System, give them a 
-                hands-on experience with the fundamentals of robotics
-            </p>
+            <p>Gave demonstration of LucoBot to the students and 
+                teachers of Becone House School System, providing them with 
+                hands-on experience with the fundamentals of robotics.</p>
         </div>
 
-        <!-- Image section -->
         <div class="image-container">
-            <img src="../assets/img/conf/img5.JPG" alt="Image 1">
-            <!-- <img src="../assets/img/conf/img4.JPG" alt="Image 1"> -->
-            <!-- <img src="assets/img/lucobot/IMG_20240625_125031054.jpg" alt="Image 2"> -->
+            <img src="../assets/img/conf/img5.JPG" alt="Robotics Workshop">
         </div>
-    </div>
-    
-    <div class="sub-container">
-        <!-- Text section -->
+    </section>
+
+    <section id="description-container">
         <div class="text-container">
-            <h3>ML Workshop</h3>
-            <p>Held 6 weeks of hands-on workshop on Machine Learning from 
-                the basics to the advanced level.
-            </p>
+            <h3>Machine Learning Workshop</h3>
+            <p>Conducted a comprehensive 6-week hands-on workshop on Machine Learning, 
+                covering topics from basics to advanced level applications.</p>
         </div>
 
-        <!-- Image section -->
         <div class="image-container">
-            <img src="../assets/img/conf/img6.jpeg" alt="Image 1">
-            <!-- <img src="../assets/img/conf/img4.JPG" alt="Image 1"> -->
-            <!-- <img src="assets/img/lucobot/IMG_20240625_125031054.jpg" alt="Image 2"> -->
+            <img src="../assets/img/conf/img6.jpeg" alt="ML Workshop">
         </div>
-    </div>
+    </section>
 
-    <div class="sub-container">
-        <!-- Text section -->
+    <section id="description-container">
         <div class="text-container">
-            <h3>ICAPE</h3>
-            <p>1st International Conference on Applied Physics and Engineering at NED University of Engineering and Technology.
-            </p>
+            <h3>ICAPE Conference</h3>
+            <p>Participated in the 1st International Conference on Applied Physics and Engineering 
+                at NED University of Engineering and Technology.</p>
         </div>
 
-        <!-- Image section -->
         <div class="image-container">
-            <img src="../assets/img/conf/img1.jpg" alt="Image 1">
-            <!-- <img src="../assets/img/conf/img4.JPG" alt="Image 1"> -->
-            <!-- <img src="assets/img/lucobot/IMG_20240625_125031054.jpg" alt="Image 2"> -->
+            <img src="../assets/img/conf/img1.jpg" alt="ICAPE Conference">
         </div>
-    </div>
-</section>
+    </section>
 
-
-    <!-- <section id="description"> -->
-        <!-- <h2></h2> -->
-        <!-- <p> </p> -->
-    <!-- </section> -->
-    
-    <!-- <section id="video"> -->
-        <!-- <div class="video-container"> -->
-            <!-- <iframe src="https://drive.google.com/file/d/1tkIXkRa_5lDc_a2eNqRsttYqIETj_e0l/preview" width="640" height="480" allow="autoplay" frameborder="0" allowfullscreen></iframe> -->
-        <!-- </div> -->
-    <!-- </section> -->
-    
-    <!-- <section id="images"> -->
-        <!-- <div class="image-gallery"> -->
-            <!-- <a href="assets/img/robodoc/img-1.png" data-lightbox="robodoc-gallery" data-title="Image 1"> -->
-                <!-- <img src="assets/img/robodoc/img-1.png" alt="Image 1"> -->
-            <!-- </a>             -->
-        <!-- </div> -->
-    <!-- </section> -->
     <footer class="footer-area section-padding">
         <div class="container">
             <div class="row">
@@ -152,5 +113,36 @@
             </div>
         </div>
     </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.getElementById('menu-toggle');
+            const navbarCollapse = document.getElementById('main-navbar');
+            
+            menuToggle.addEventListener('click', function() {
+                menuToggle.classList.toggle('active');
+                navbarCollapse.classList.toggle('show');
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', function(event) {
+                const isClickInside = navbarCollapse.contains(event.target) || menuToggle.contains(event.target);
+                
+                if (!isClickInside && navbarCollapse.classList.contains('show')) {
+                    navbarCollapse.classList.remove('show');
+                    menuToggle.classList.remove('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>

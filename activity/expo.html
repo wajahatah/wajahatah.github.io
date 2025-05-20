@@ -2,108 +2,103 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Try</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Expos</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="../assets/css/nav.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons/css/academicons.min.css">
-    <link rel="stylesheet" href="../assets/css/styles.css"> <!-- Link to your external CSS file -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
     <link rel="stylesheet" href="../assets/css/expo.css">
+    <link rel="stylesheet" href="../assets/css/mobile-responsive.css">
 </head>
 <script>
     function goBack() {
         window.history.back();
-}
+    }
 </script>
 <body>
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
-        <a class="navbrand-name" class="nav-link" href="../activities.html">Activities</a>
-        <div class="collapse navbar-collapse" id="main-navbar">
-          <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
-            <li class="nav-item"><a class="nav-link active" href="conf.html">Conferences & Workshops</a></li>
-            <li class="nav-item"><a class="nav-link" href="arm.html">Robotic Arm</a></li>
-            <!-- <li class="nav-item"><a class="nav-link" href="expo.html">Project Expos</a></li> -->
-            <li class="nav-item"><a class="nav-link" href="society.html">Student Societies Events</a></li>
-            <li class="nav-item"><a class="nav-link" href="industry.html">Industrial Visits</a></li>
-            <li class="nav-item"><a class="nav-link" href="social.html">Social Work</a></li>
-            <!-- <li class="nav-item"><a class="nav-link" href="qiyas.html">Qiyas</a></li> -->
-            <!-- <li class="nav-item"><a class="nav-link" href="ml.html">ML Algorithm</a></li> -->
-            <!-- <li class="nav-item"><a class="nav-link" href="cv.html">Computer Vision</a></li> -->
-          </ul>
+        <div class="container">
+            <a class="navbrand-name" href="../activities.html">Activities</a>
+            <button onclick="goBack()" class="back-button">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+            <div class="menu-toggle" id="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="collapse navbar-collapse" id="main-navbar">
+                <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
+                    <li class="nav-item"><a class="nav-link" href="conf.html">Conferences & Workshops</a></li>
+                    <li class="nav-item"><a class="nav-link" href="arm.html">Robotic Arm</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="expo.html">Project Expos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="society.html">Student Societies Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="industry.html">Industrial Visits</a></li>
+                    <li class="nav-item"><a class="nav-link" href="social.html">Social Work</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
-    <button onclick="goBack()" class="back-button">
-        <i class="fas fa-arrow-left"></i>
-    </button>
+    </nav>
+    <!-- Navbar End -->
 
-    <script>
-        function goBack() {
-            window.history.back();
-    }
-    </script>
-</nav>
+    <section id="description-container">
+        <div class="text-container">
+            <h2>Project Expos</h2>
+            <p>Showcasing innovative projects at various technology exhibitions and university events, demonstrating expertise in robotics and engineering.</p>
+        </div>
+    </section>
 
-<section id="description-container">
-
-    <div class="sub-container">
+    <section id="description-container">
         <div class="text-container">
             <h3>Sindh HEC Technology Showcase 3</h3>
-            <p> Present developed and deployed project in Sindh HEC Technology Showcase 3.
-            </p>
+            <p>Presented developed and deployed projects at the Sindh HEC Technology Showcase 3, 
+               highlighting innovative solutions and technological advancements.</p>
         </div>
+
         <div class="media-container">
-            <!-- <iframe 
-                src="https://drive.google.com/file/d/1GZ0pAKOi0QTcwN5BxDRwe5b9AWlX93IH/preview" 
-                allow="autoplay"
-                allowfullscreen>
-            </iframe> -->
-            <!-- src="https://drive.google.com/file/d/1GZ0pAKOi0QTcwN5BxDRwe5b9AWlX93IH/preview" -->
-            <!-- <img src="../assets/img/conf/img3.JPG" alt="Image 1"> -->
-            <img src="../assets/img/expo/img6.jpg" alt="Image 1">
+            <img src="../assets/img/expo/img6.jpg" alt="HEC Technology Showcase">
         </div>
-    </div>
-    
-    <div class="sub-container">
+    </section>
+
+    <section id="description-container">
         <div class="text-container">
             <h3>NED Open Day</h3>
-            <p> Live demonstration of Lucobot entertaining students and their parents on Open Day 
-                of NED University.
-            </p>
+            <p>Conducted live demonstrations of LucoBot, engaging and entertaining students and their 
+               parents during NED University's Open Day event.</p>
         </div>
+
         <div class="media-container">
-            <img src="../assets/img/expo/img5.jpg" alt="Image 1">
-            <!-- <img src="../assets/img/arm/img2.jpg" alt="Image 1"> -->
+            <img src="../assets/img/expo/img5.jpg" alt="NED Open Day Demonstration">
         </div>
-    </div>
-    
-    <div class="sub-container">
+    </section>
+
+    <section id="description-container">
         <div class="text-container">
             <h3>100th Year Convocation</h3>
-            <p>Selected in top 10 projects of NED University, Showcase in 100th 
-                year aniversery event of NED University.
-            </p>
+            <p>Project selected among top 10 at NED University, showcased during the university's 
+               100th anniversary celebration event.</p>
         </div>
 
         <div class="media-container">
-            <img src="../assets/img/expo/img3.jpg" alt="Image 1">
+            <img src="../assets/img/expo/img3.jpg" alt="100th Year Convocation Exhibition">
         </div>
-    </div>
+    </section>
 
-    <div class="sub-container">
+    <section id="description-container">
         <div class="text-container">
             <h3>HEC Technology Showcase</h3>
-            <p> Present Final Year Design Project in HEC Technology Showcase.
-            </p>
+            <p>Presented Final Year Design Project at the HEC Technology Showcase, 
+               demonstrating innovative solutions and technical expertise.</p>
         </div>
 
         <div class="media-container">
-            <img src="../assets/img/expo/img4.jpg" alt="Image 1">
+            <img src="../assets/img/expo/img4.jpg" alt="HEC Technology Showcase Presentation">
         </div>
-    </div>
-</section>
+    </section>
 
     <footer class="footer-area section-padding">
         <div class="container">
@@ -116,5 +111,36 @@
             </div>
         </div>
     </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.getElementById('menu-toggle');
+            const navbarCollapse = document.getElementById('main-navbar');
+            
+            menuToggle.addEventListener('click', function() {
+                menuToggle.classList.toggle('active');
+                navbarCollapse.classList.toggle('show');
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', function(event) {
+                const isClickInside = navbarCollapse.contains(event.target) || menuToggle.contains(event.target);
+                
+                if (!isClickInside && navbarCollapse.classList.contains('show')) {
+                    navbarCollapse.classList.remove('show');
+                    menuToggle.classList.remove('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
