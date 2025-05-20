@@ -2,18 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resume</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/resume.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/nav-index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons/css/academicons.min.css">
 </head>
 <body>
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
       <div class="container">
         <a href="index.html" class="navbar-brand"><img src="assets/img/logo.png" alt="" /></a>
+        
+        <div class="menu-toggle" id="menu-toggle">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+
         <div class="collapse navbar-collapse" id="main-navbar">
           <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
             <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
@@ -133,7 +143,7 @@
                     <span>September 2022 - September 2024</span>
                     <div class="cv-bullet-container">
                         <ul class="cv-line-text-bullet"> 
-                          <li>Developed firmware, vision and recognition features algorithm of a receptionist robot. Robot was able to detect humans in front of them and interact based on the person’s data from the database.</li>
+                          <li>Developed firmware, vision and recognition features algorithm of a receptionist robot. Robot was able to detect humans in front of them and interact based on the person's data from the database.</li>
                           <li>Worked on Lithium Ion Batteries testing and data acquisition of battery parameters.</li>
                           <li>Write a python script for data analysis and machine learning algorithm for battery degradation prediction.</li>
                           <li>Developed firmware and implemented securities of  ESP8266 and ESP32 microcontrollers for electric vehicles.</li>
@@ -178,5 +188,61 @@
       </div>
     </footer>
     <!-- Footer Section End -->
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.getElementById('menu-toggle');
+        const navbarCollapse = document.getElementById('main-navbar');
+        const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+        
+        // Toggle menu
+        menuToggle.addEventListener('click', function() {
+          navbarCollapse.classList.toggle('show');
+          menuToggle.classList.toggle('active');
+          document.body.style.overflow = navbarCollapse.classList.contains('show') ? 'hidden' : '';
+        });
+
+        // Close menu when clicking a link
+        navLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            navbarCollapse.classList.remove('show');
+            menuToggle.classList.remove('active');
+            document.body.style.overflow = '';
+          });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+          const isClickInside = navbarCollapse.contains(event.target) || menuToggle.contains(event.target);
+          
+          if (!isClickInside && navbarCollapse.classList.contains('show')) {
+            navbarCollapse.classList.remove('show');
+            menuToggle.classList.remove('active');
+            document.body.style.overflow = '';
+          }
+        });
+
+        // Handle active state for current page
+        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        navLinks.forEach(link => {
+          if (link.getAttribute('href') === currentPage) {
+            link.parentElement.classList.add('active');
+          }
+        });
+
+        // Close menu when window is resized to desktop view
+        window.addEventListener('resize', function() {
+          if (window.innerWidth > 768) {
+            navbarCollapse.classList.remove('show');
+            menuToggle.classList.remove('active');
+            document.body.style.overflow = '';
+          }
+        });
+      });
+    </script>
 </body>
 </html>
