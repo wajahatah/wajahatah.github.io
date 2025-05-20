@@ -62,11 +62,16 @@
     width: 100%;
 }
 
-/* Main heading */
-.main-heading {
-    font-size: 2.5em;
-    font-weight: bold;
-    color: rgba(9, 30, 217, 0.966);
+/* Hide the first description container's heading in desktop mode */
+#description-container:first-of-type {
+    display: none;
+}
+
+/* Show the first description container's heading only in mobile/toggle mode */
+@media screen and (max-width: 768px) {
+    #description-container:first-of-type {
+        display: flex;
+    }
 }
 
 /* Sub-container: text and images in parallel */
@@ -117,4 +122,22 @@
     height: auto;
     border-radius: 10px;
     object-fit: cover;
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 768px) {
+    .sub-container {
+        flex-direction: column;
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .text-container,
+    .image-container {
+        max-width: 100%;
+    }
+
+    .image-container img {
+        width: 100%;
+    }
 }
