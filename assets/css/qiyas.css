@@ -10,7 +10,7 @@
     font-weight: bold;
     align-items: center;
     /* color: #333; */
-    color: rgba(9, 30, 217, 0.966);
+    color: rgba(39, 123, 233, 0.966);
 }
 #description-container h3 {
     font-size: 1.5em;
@@ -18,7 +18,7 @@
     align-items: center;
     /* color: #333; */
     /* color: rgb(100, 252, 138); */
-    color: rgba(16, 36, 217, 0.966);
+    color: rgba(39, 123, 233, 0.966);
     /* color: rgba(9, 250, 162, 0.966); */
 }
 

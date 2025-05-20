@@ -28,7 +28,7 @@ body::before {
     font-weight: bold;
     align-items: center;
     /* color: #333; */
-    color: rgba(9, 250, 162, 0.966);
+    color: rgba(85, 233, 179, 0.966);
 }
 #description-container h3 {
     font-size: 1.5em;
@@ -42,16 +42,27 @@ body::before {
 .text-container {
     flex: 1; /* Takes up 50% of the space */
     max-width: 50%;
+    text-align: left; /* Align text to the left */
+}
+
+.text-container p {
+    font-size: 1.2em;
+    color: #333;
 }
 
 .image-container {
     flex: 1; /* Takes up 50% of the space */
     max-width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Space between images */
+    justify-content: center; /* Center images */
 }
 
 .image-container img {
     width: 100%; 
     height: auto; 
     border-radius: 10px; /* Optional: Adds rounded corners */
+    object-fit: cover;
 }
 
