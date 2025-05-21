@@ -142,17 +142,89 @@
     /* display: block; */
 }
 
+/* Download button styles */
 .cv-download-btn {
-    background-color: #009dff; /* Change to your preferred color */
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    display: inline-block;
-    margin-top: 15px;
+    display: block;
+    margin: 30px auto;
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #1C1C20;
+    border: 2px solid #1C1C20;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    text-align: center;
+    width: fit-content;
 }
 
 .cv-download-btn:hover {
-    background-color: #cc5500;
+    color: #1C1C20;
+    background-color: transparent;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cv-download-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Pulse animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.cv-download-btn {
+    animation: pulse 2s infinite;
+}
+
+/* Desktop styles */
+@media screen and (min-width: 769px) {
+    .cv-download-btn {
+        position: fixed;
+        top: 100px;
+        right: 30px;
+        margin: 0;
+        z-index: 1000;
+    }
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+    .cv-download-btn {
+        display: block;
+        margin: 30px auto;
+        padding: 12px 30px;
+        font-size: 18px;
+        font-weight: 600;
+        color: #fff;
+        background-color: #1C1C20;
+        border: 2px solid #1C1C20;
+        border-radius: 30px;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        text-align: center;
+        width: fit-content;
+    }
+
+    .cv-timelin-title {
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        padding-left: 10px;
+}
 }
