@@ -5,15 +5,15 @@
   .container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
     justify-content: space-between;
   }
   
   .row {
     display: flex;
     flex: 1;
-    gap: 20px;
-    /* justify-content: space-between; */
+    gap: 15px;
+    /* justify-content: center; */
     /* align-items: flex-start; */
   }
   
@@ -56,3 +56,14 @@
     text-decoration: none;
     color: inherit;
   }
+
+@media screen and (max-width: 768px) {
+  .row {
+    display: flex;
+    flex: 1;
+    gap: 35px;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+}

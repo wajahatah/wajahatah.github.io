@@ -57,3 +57,31 @@
     text-decoration: none;
     color: inherit;
 }
+
+@media screen and (max-width: 768px) {
+  .row {
+    display: flex;
+    flex: 1;
+    gap: 35px;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .box {
+    flex: 1;
+    /* min-width: 500px; */
+    /* width: 500px; */
+    max-width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    justify-content: center;
+    padding: 15px;
+    height: auto; /* Allows the height to be dynamic */
+}
+}
