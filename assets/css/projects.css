@@ -50,6 +50,7 @@
   .box p {
     font-size: 1em;
     margin: 10px;
+    text-align: justify;
   }
   
   .box a {

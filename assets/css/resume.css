@@ -81,6 +81,7 @@
 .cv-timeline li {
     margin-bottom: 20px;
     position: relative;
+    text-align: justify;
 }
 
 .cv-content-text {
@@ -88,6 +89,8 @@
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+
 }
 
 .cv-line-title {
