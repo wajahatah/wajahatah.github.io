@@ -156,7 +156,7 @@
     .award-description {
         font-size: 1em;
         color: #333;
-        text-align: left;
+        text-align: justify;
     }
     .award-image {
         /* width: 150px;  */
