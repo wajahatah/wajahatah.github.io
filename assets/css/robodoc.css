@@ -22,6 +22,7 @@ body::before {
     justify-content: space-between;
     gap: 20px; /* Adjust spacing between text and image */
     padding: 100px;
+    text-align: justify;
 }
 #description-container h2 {
     font-size: 2em;
@@ -42,12 +43,13 @@ body::before {
 .text-container {
     flex: 1; /* Takes up 50% of the space */
     max-width: 50%;
-    text-align: left; /* Align text to the left */
+    text-align: justify; /* Align text to the left */
 }
 
 .text-container p {
     font-size: 1.2em;
     color: #333;
+    text-align: justify;
 }
 
 .image-container {

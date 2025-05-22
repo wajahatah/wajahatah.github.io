@@ -1,3 +1,10 @@
+ .text-container p {
+        margin-bottom: 15px;
+        line-height: 1.6;
+        text-align: justify;
+    }
+
+
 /* Mobile Responsive Styles */
 @media screen and (max-width: 768px) {
     /* Navbar Styles */
@@ -88,7 +95,7 @@
     .text-container p {
         margin-bottom: 15px;
         line-height: 1.6;
-        text-align: left;
+        text-align: justify;
     }
 
     .text-container ul {
