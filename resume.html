@@ -67,10 +67,10 @@
                   <h2 class="cv-timelin-title">Skills</h2>
                 </li>
                 <li><div class="cv-content-text">
-                    <p class="cv-skill-head">AI and ML</p><p class="cv-line-int">SVM, KNN, RF, Decision Tree, ANN, CNN, Regression (Linear and Logistic), Transfer Learning, Reinforcement Learning, Object Detection, Yolo, Facial Recognition, Deep face, Tracking, Strong Sort, Deep Sort, MoViNet, ResNet, EfficientDet, Haar Cascade</p>
+                    <p class="cv-skill-head">AI and ML</p><p class="cv-line-int">SVM, KNN, RF, Decision Tree, ANN, CNN, Regression (Linear and Logistic), MLP, Transfer Learning, Reinforcement Learning, Object Detection, Yolo, Facial Recognition, Deep face, Tracking, Strong Sort, Deep Sort, MoViNet, ResNet, EfficientDet, Haar Cascade</p>
                 <!-- </div></li> -->
                 <!-- <li><div class="cv-content-text"> -->
-                    <p class="cv-skill-head">Programming Languages</p><p class="cv-line-int">C, C++, Python (numpy, pandas, matplotlib, Scikit-Learn, Tensorflow, Keras, OpenCV), html, css, Ladder logic</p>
+                    <p class="cv-skill-head">Programming Languages</p><p class="cv-line-int">C, C++, Python (numpy, pandas, matplotlib, Scikit-Learn, Tensorflow, Keras, OpenCV, FastApi, Flask), html, css, Ladder logic</p>
                 <!-- </div></li> -->
                 <!-- <li><div class="cv-content-text"> -->
                     <p class="cv-skill-head">Simulators</p><p class="cv-line-int">Altium Designer, Proteus, Multisim, Matlab Simulink, Gazebo</p>
@@ -131,12 +131,32 @@
                     <span>September 2024 - Present</span>
                     <div class="cv-bullet-container">
                       <ul class="cv-line-text-bullet"> 
-                        <li>Developed computer vision algorithms for pose detection through the backside of 4 persons in one frame, leveraging normalized datasets and advanced preprocessing techniques.</li>
-                        <li>Implemented machine learning models for classification tasks, utilizing frameworks such as Albumentations (v1.4.20) and MMCV-full (v1.7.2) for data augmentation and model training.</li>
-                        <li>Built hybrid detection models capable of taking both video frames and keypoints as input, enabling efficient and scalable detection pipelines.</li>
-                        <li>Optimized computational workflows using multithreading, reducing latency and enhancing throughput in real-time systems.</li>
-                        <li>Deployed and managed production systems with 16 RTSP cameras, ensuring seamless real-time processing, stability, and continuous operation in production environments.</li>
-                        <li>Conducted testing and evaluation, effectively utilizing a dataset of 35 training videos to validate model performance</li>
+                        <li>Integrated code modules and trained models into the main ML pipeline; validated module functionality and overall system accuracy.</li>
+                        <li>Conducted in-depth analysis on pose estimation models (MMPOSE vs. YOLO Pose) to reduce false positives and determine the best candidate for custom training.</li>
+                        <li>Collected and managed datasets; coordinated with annotation teams; validated annotations for quality before model training.</li>
+                        <li>Trained multiple models with different configurations (e.g., layer freezing) and compared performance to select optimal training parameters.</li>
+                        <li>Designed and implemented five distinct logic-based algorithms using geometric and mathematical techniques to detect "looking around" behavior in students; achieved up to 95% accuracy.</li>
+                        <li>Developed and integrated logic and pose detection modules into the pipeline, ensuring high compatibility and performance.</li>
+                        <li><ul> Engineered hand raise detection logic using: 
+                              <p> - Geometric heuristics (lengths, distances, angles between keypoints) </p>
+                              <p>- Machine learning models: Random Forest, Decision Tree (Classifier & Regressor), Shallow Neural Networks (3-layer & 4-layer), YOLO Classifier & Detector</p> 
+                              <p>- Various data normalization and preprocessing techniques, including ROI subtraction and keypoint normalization </p>
+                              <p>- Manual annotation of keypoint data and CSV-based dataset curation for hand raise detection </p>
+                              <p> - Designed a hybrid model combining frame-based features and predicted keypoints to improve hand raise detection (later deprioritized by management).
+                              </p></ul></li>
+                        <li> <ul> Scaled the system from 1 camera to 10, then to 20 cameras:
+                              <p>- Defined Regions of Interest (ROIs) for each camera </p>
+                              <p>- Customized and calibrated geometric parameters per camera view </p>
+                              <p>- Repeated data collection, annotation, and model adaptation for each camera </p></ul></li>
+                        <li> <ul> Developed hand-in-pocket detection using:
+                              <p>- Geometric calculations (angles, distances between keypoints) </p>
+                              <p>- Machine learning (Random Forest with Grid Search optimization) </p>
+                              <p>- Comparative training datasets: raw keypoints, distances, and combined features </p>
+                              <p>- Temporal feature vector integration for improved model performance </p>
+                              <p>- Transitioned to MLP (Multilayer Perceptron) models with various layer configurations for better accuracy
+                              </p></ul></li>
+                        <li>Worked with large-scale datasets (up to 63k rows); iteratively trained and evaluated models in a continuous improvement loop</li>
+                        <li>Deployed the complete system to a production server remotely; currently operational in a live environment with 20 cameras actively detecting multiple student actions in real time</li>
                       </ul>
                     </div>
                   </div>
