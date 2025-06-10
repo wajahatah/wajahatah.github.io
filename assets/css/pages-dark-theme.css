@@ -1,0 +1,141 @@
+body.dark-theme {
+    background-color: #121212 !important; /* Important to override existing styles */
+    color: #e0e0e0 !important;
+}
+
+/* body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme h4,
+body.dark-theme h5,
+body.dark-theme h6 {
+    color: #f5f5f5 !important;
+} */
+
+body.dark-theme p {
+    color: #f9f7fc !important; /* A light purple, good for dark themes */
+}
+body.dark-theme a {
+    color: #f9f7fc !important; /* A light purple, good for dark themes */
+}
+
+body.dark-theme .navbar {
+    background-color: #1e1e1e !important;
+    border-bottom: 1px solid #333333 !important;
+}
+
+body.dark-theme .navbar-nav .nav-link {
+    color: #e0e0e0 !important;
+}
+
+body.dark-theme .navbar-nav .nav-link:hover,
+body.dark-theme .navbar-nav .nav-link.active {
+    color: #00b4d9 !important;
+}
+
+body.dark-theme .footer-area {
+    background-color: #121212 !important;
+    color: #e0e0e0 !important;
+}
+
+body.dark-theme .footer-area a {
+    color: #00b4d9 !important;
+}
+
+/* Add more specific styles as needed below */
+/* Theme Switcher Button Styles */
+.theme-btn {
+    background: none;
+    border: none;
+    color: #333; /* Default color for light theme */
+    cursor: pointer;
+    font-size: 1.2rem; /* Adjust as needed */
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s ease;
+}
+
+.theme-btn:hover {
+    color: #00b4d9; /* Highlight color on hover */
+}
+
+.theme-btn .fa-sun,
+.theme-btn .fa-moon {
+    /* display: inline-block;  */
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Light theme (default state) */
+/* .theme-btn .fa-sun { */
+.theme-btn .fa-moon {
+    display: inline-block;
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+}
+
+/* .theme-btn .fa-moon { */
+.theme-btn .fa-sun {
+    display: none; /* Start hidden */
+    opacity: 0;
+    transform: scale(0.5) rotate(-90deg);
+}
+
+
+/* Styles for when dark theme is active */
+body.dark-theme .theme-btn {
+    color: #e0e0e0; /* Icon color for dark theme */
+}
+
+body.dark-theme .theme-btn:hover {
+    color: #00b4d9; /* Highlight color on hover for dark theme */
+}
+
+/* body.dark-theme .theme-btn .fa-sun { */
+body.dark-theme .theme-btn .fa-moon {
+    display: none; /* Hide sun in dark theme */
+    opacity: 0;
+    transform: scale(0.5) rotate(90deg);
+}
+
+/* body.dark-theme .theme-btn .fa-moon { */
+body.dark-theme .theme-btn .fa-sun {
+    display: inline-block; /* Show moon in dark theme */
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+}
+
+body.dark-theme .back-button {
+    background-color: #1e1e1e !important;
+    color: #e0e0e0 !important;
+    padding-right: 1px;
+    /* border: 1px solid #e0e0e0 !important; */
+}
+
+body.dark-theme .back-button:hover {
+    background-color: #00b4d9 !important;
+    color: #1e1e1e !important;
+    border-color: #00b4d9 !important;
+}
+
+body.dark-theme .navbar-collapse {
+    background: rgba(30, 30, 30, 0.98) !important;
+    backdrop-filter: blur(10px) !important;
+}
+
+body.dark-theme .menu-toggle .bar {
+    background-color: #e0e0e0 !important;
+}
+
+body.dark-theme .navbar-nav .nav-link {
+    color: #e0e0e0 !important;
+}
+
+body.dark-theme .navbar-nav .nav-link:hover {
+    color: #00b4d9 !important;
+}
+
+body.dark-theme .navbar-nav .nav-link::after {
+    background: #00b4d9 !important;
+}
