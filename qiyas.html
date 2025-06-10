@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="assets/css/qiyas.css">
     <link rel="stylesheet" href="assets/css/mobile-project-responsive.css">
     <link rel="stylesheet" href="assets/css/footer-responsive.css">
+    <link rel="stylesheet" href="assets/css/pages-dark-theme.css">
 </head>
 <script>
     function goBack() {
@@ -53,18 +54,18 @@
         <div class="text-container">
             <h2>Qiyas - Exam Center</h2>
             <h3>Responsibilities</h3>
-            <p>Developed and optimized computer vision algorithms for pose 
-                detection of multiple individuals in a frame, leveraging 
-                normalized datasets and advanced preprocessing techniques. 
-                Implemented machine learning models for classification, 
-                utilizing Albumentations (v1.4.20) and MMCV-full (v1.7.2) for 
-                data augmentation and training. Built hybrid detection models 
-                integrating both video frames and keypoints for efficient 
-                detection. Improved computational workflows through 
-                multithreading, enhancing real-time performance. Managed 16 
-                RTSP cameras for seamless real-time processing in production 
-                environments. Conducted rigorous testing and evaluation using 
-                35 training videos to validate model performance.</p>
+            <p>Designed and implemented a comprehensive computer vision system for real-time student behavior analysis across 20 surveillance 
+                cameras. The project involved integrating trained keypoint detection models into a modular pipeline, conducting detailed model 
+                evaluations (MMPOSE vs. YOLO Pose), and optimizing for minimal false positives.</p>
+            <p>Led data collection and annotation workflows, trained and validated multiple models with varying configurations, and developed 
+                robust logic-based and ML-based algorithms to detect specific actions such as looking around, hand raise, and hand in pocket. 
+                Approaches included geometric rule-based methods, Random Forests, Decision Trees, shallow neural networks, and hybrid deep 
+                learning models, alongside advanced preprocessing techniques like keypoint normalization and ROI-based adjustment.</p>
+            <p>Manually curated datasets with over 63,000 annotated rows, tested diverse model architectures and feature engineering methods 
+                (including temporal vector integration), and continuously improved system performance. The system was scaled from a single-
+                camera setup to a full-scale deployment across 20 cameras, with each camera calibrated for customized ROI and detection tuning.</p>
+            <p>Successfully deployed the solution to a production server, where it is now actively monitoring and detecting student actions
+                 in a live center environment with up to 95% accuracy.</p>
         </div>
 
         <div class="image-container">
@@ -114,5 +115,7 @@
             });
         });
     </script>
+    <script src="assets/js/theme-switcher.js" defer></script>
+
 </body>
 </html>
