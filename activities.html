@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/nav-index.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons/css/academicons.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/dark-theme.css" />
 </head>
 <body>
     <!-- Navbar Start -->
@@ -19,10 +20,13 @@
       <div class="container">
         <a href="index.html" class="navbar-brand"><img src="assets/img/logo.png" alt="" /></a>
         
+        <div class="mobile-header-controls"> <!-- Wrapper for mobile controls -->
+          <button id="theme-switcher-mobile-btn" class="theme-btn"> <i class="fas fa-sun"></i> <i class="fas fa-moon"></i> </button>
         <div class="menu-toggle" id="menu-toggle">
           <div class="bar"></div>
           <div class="bar"></div>
           <div class="bar"></div>
+          </div>
         </div>
 
         <div class="collapse navbar-collapse" id="main-navbar">
@@ -33,6 +37,7 @@
             <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
             <li class="nav-item"><a class="nav-link active" href="activities.html">Activities</a></li>
             <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+            <li class="nav-item desktop-theme-switcher-li"><button id="desktop-theme-switcher-btn" class="theme-btn"> <i class="fas fa-sun"></i> <i class="fas fa-moon"></i> </button></li>
           </ul>
         </div>
       </div>
@@ -277,5 +282,8 @@
         });
       });
     </script>
+
+    <script src="assets/js/theme-switcher.js" defer></script>
+
 </body>
 </html>
