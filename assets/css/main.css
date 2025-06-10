@@ -1229,3 +1229,29 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+/* === Theme Switcher Responsive Visibility === */
+
+/* Style for the wrapper of mobile controls (theme switcher and hamburger) */
+.mobile-header-controls {
+    display: flex; /* Default for mobile: use flex to align items */
+    align-items: center;
+    gap: 10px; /* Adjust spacing as needed */
+}
+
+/* Hide desktop theme switcher list item by default (mobile first) */
+li.desktop-theme-switcher-li {
+    display: none !important;
+}
+
+/* Styles for desktop/larger screens */
+@media (min-width: 769px) { /* This breakpoint should align with when the navbar collapses */
+    .mobile-header-controls {
+        display: none !important; /* Hide the mobile controls wrapper */
+    }
+
+    li.desktop-theme-switcher-li {
+        display: list-item !important; /* Show the desktop theme switcher in the list */
+    }
+}
+/* === End Theme Switcher Responsive Visibility === */
