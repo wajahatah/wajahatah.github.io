@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RAG Systems</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/nav.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons/css/academicons.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/mobile-project-responsive.css">
+    <link rel="stylesheet" href="../assets/css/pages-dark-theme.css">
+    <style>
+        @media screen and (min-width: 769px) {
+            #description-container .text-container {
+                flex: 2 1 0%;
+            }
+            #description-container .image-container {
+                flex: 1 1 0%;
+                min-width: 0;
+            }
+            #description-container .image-container img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
+        <div class="container">
+            <a class="navbrand-name" href="../project.html">RAG Systems</a>
+            <button onclick="goBack()" class="back-button">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+        </div>
+    </nav>
+
+    <section id="description-container">
+        <div class="text-container">
+            <h2>RAG Systems</h2>
+            <p>Two Retrieval-Augmented Generation systems built around the same core pipeline: a document is ingested and split into chunks, embeddings are generated for each chunk and stored in a vector database, and when a user queries the document, the relevant chunks are retrieved and used to generate a grounded response.</p>
+        </div>
+
+        <div class="image-container">
+            <img src="../assets/img/RAG/image.png" alt="RAG Systems Overview">
+        </div>
+    </section>
+
+    <section id="description-container">
+        <div class="text-container">
+            <h3>RAAS</h3>
+            <p>A team project built with 11 members. My role was to develop and manage the AI Gateway and the Chunking microservice, and to deploy the system to the staging environment along with its CI/CD pipeline.</p>
+            <p>The AI Gateway is the sole entry point through which any external AI service is called — chunking, embedding, reranking, LLM, ASR, TTS, OCR, or any other service. It holds a wrapper for each service that reformats the outgoing request the way that service expects, and reformats the response back into the format the rest of the system expects.</p>
+
+            <h4>Key Responsibilities</h4>
+            <ul>
+                <li>Developed and managed the AI Gateway, the single routing point through which every request to an AI service passes</li>
+                <li>Built per-service wrappers in the gateway to format outgoing requests and normalize responses for chunking, embedding, reranking, LLM, ASR, TTS, OCR, and other services</li>
+                <li>Developed the Chunking microservice</li>
+                <li>Deployed the system to the staging environment</li>
+                <li>Set up the CI/CD pipeline for staging deployments</li>
+            </ul>
+        </div>
+
+        <div class="image-container">
+            <!-- Add RAAS screenshots here, e.g. assets/img/RAG/raas/img-1.png -->
+             <img src="../assets/img/RAG/image copy.png" alt="RAG Systems Overview">
+        </div>
+    </section>
+
+    <!-- <section id="video">
+        <div class="video-container">
+            Add RAAS demo video iframe here, e.g.
+            <iframe src="https://drive.google.com/file/d/YOUR_FILE_ID/preview" allow="autoplay" frameborder="0" allowfullscreen></iframe>
+           
+        </div>
+    </section> -->
+
+    <section id="description-container">
+        <div class="text-container">
+            <h3>RAG Chat</h3>
+            <p>A solo project built as a basic demo system, with every part of the pipeline made swappable. The vector database can be Chroma, Milvus, or others; the LLM can be served through Ollama, HuggingFace, or any external API; and the embedding model and reranker are similarly interchangeable. The system parses an uploaded document and answers queries against it.</p>
+
+            <h4>Key Responsibilities</h4>
+            <ul>
+                <li>Built a modular RAG pipeline with swappable vector store (Chroma, Milvus, or others), LLM provider (Ollama, HuggingFace, or any API), embedding model, and reranker</li>
+                <li>Implemented document ingestion and parsing, chunking, and embedding generation</li>
+                <li>Implemented query-time retrieval and response generation over the ingested document</li>
+                <li>Built solo, end to end, as a demo of the pipeline</li>
+            </ul>
+        </div>
+
+        <div class="image-container">
+            <!-- Add RAG Chat screenshots here, e.g. assets/img/RAG/rag-chat/img-1.png -->
+        </div>
+    </section>
+
+    <!-- <section id="video">
+        <div class="video-container">
+            Add RAG Chat demo video iframe here, e.g.
+            <iframe src="https://drive.google.com/file/d/YOUR_FILE_ID/preview" allow="autoplay" frameborder="0" allowfullscreen></iframe>
+           
+        </div>
+    </section> -->
+
+    <footer class="footer-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer-text text-center">
+                        <p>&copy; All rights reserved to Wajahat Ahmed.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="../assets/js/theme-switcher.js" defer></script>
+</body>
+</html>

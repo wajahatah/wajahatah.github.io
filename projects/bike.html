@@ -1,18 +1,18 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Electric Bike</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/nav.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons/css/academicons.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/bike.css">
-    <link rel="stylesheet" href="assets/css/mobile-project-responsive.css">
-    <link rel="stylesheet" href="assets/css/pages-dark-theme.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/bike.css">
+    <link rel="stylesheet" href="../assets/css/mobile-project-responsive.css">
+    <link rel="stylesheet" href="../assets/css/pages-dark-theme.css">
 </head>
 <script>
     function goBack() {
@@ -23,28 +23,10 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
         <div class="container">
-            <a class="navbrand-name" href="project.html">Projects</a>
+            <a class="navbrand-name" href="../project.html">Electric Bike</a>
             <button onclick="goBack()" class="back-button">
                 <i class="fas fa-arrow-left"></i>
             </button>
-            <div class="menu-toggle" id="menu-toggle">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-            <div class="collapse navbar-collapse" id="main-navbar">
-                <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
-                    <li class="nav-item"><a class="nav-link" href="robodoc.html">RoboDoc</a></li>
-                    <li class="nav-item"><a class="nav-link" href="lucobot.html">LucoBot</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="bike.html">Electric Bike</a></li>
-                    <li class="nav-item"><a class="nav-link" href="instrux.html">InstruX</a></li>
-                    <li class="nav-item"><a class="nav-link" href="fan.html">Smart Fan</a></li>
-                    <li class="nav-item"><a class="nav-link" href="chest.html">Truma Detection</a></li>
-                    <li class="nav-item"><a class="nav-link" href="qiyas.html">Qiyas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="ml.html">ML Algorithm</a></li>
-                    <li class="nav-item"><a class="nav-link" href="cv.html">Computer Vision</a></li>
-                </ul>
-            </div>
         </div>
     </nav>
     <!-- Navbar End -->
@@ -70,10 +52,10 @@
         </div>
     
         <div class="image-container">
-            <img src="assets/img/bike/IMG-20240119-WA0008.jpg" alt="Image 1">
-            <img src="assets/img/bike/IMG_20230527_142311.jpg" alt="Image 2">
-            <img src="assets/img/bike/IMG_20240517_102612712_HDR.jpg" alt="Image 3">
-            <img src="assets/img/bike/IMG_20240604_224717962_HDR.jpg" alt="Image 4">
+            <img src="../assets/img/bike/IMG-20240119-WA0008.jpg" alt="Image 1">
+            <img src="../assets/img/bike/IMG_20230527_142311.jpg" alt="Image 2">
+            <img src="../assets/img/bike/IMG_20240517_102612712_HDR.jpg" alt="Image 3">
+            <img src="../assets/img/bike/IMG_20240604_224717962_HDR.jpg" alt="Image 4">
         </div>
     </section>
 
@@ -103,29 +85,8 @@
         function goBack() {
             window.history.back();
         }
-
-        // Mobile menu toggle
-        document.addEventListener('DOMContentLoaded', function() {
-            const menuToggle = document.getElementById('menu-toggle');
-            const navbarCollapse = document.getElementById('main-navbar');
-            
-            menuToggle.addEventListener('click', function() {
-                menuToggle.classList.toggle('active');
-                navbarCollapse.classList.toggle('show');
-            });
-
-            // Close menu when clicking outside
-            document.addEventListener('click', function(event) {
-                const isClickInside = navbarCollapse.contains(event.target) || menuToggle.contains(event.target);
-                
-                if (!isClickInside && navbarCollapse.classList.contains('show')) {
-                    navbarCollapse.classList.remove('show');
-                    menuToggle.classList.remove('active');
-                }
-            });
-        });
     </script>
-    <script src="assets/js/theme-switcher.js" defer></script>
+    <script src="../assets/js/theme-switcher.js" defer></script>
 
 </body>
 </html>

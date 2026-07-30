@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Open Source Contribution</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/nav.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons/css/academicons.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/mobile-project-responsive.css">
+    <link rel="stylesheet" href="../assets/css/pages-dark-theme.css">
+    <style>
+        @media screen and (min-width: 769px) {
+            #description-container .text-container {
+                flex: 1 2 10%;
+            }
+            #description-container .video-container {
+                flex: 2 1 0%;
+                width: auto;
+            }
+        }
+    </style>
+</head>
+<script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
+        <div class="container">
+            <a class="navbrand-name" href="../project.html">Open Source Contribution</a>
+            <button onclick="goBack()" class="back-button">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+        </div>
+    </nav>
+
+    <section id="description-container">
+        <div class="text-container">
+            <h2>Open Source Contributions</h2>
+            <p>Open source projects and plugins built to solve problems encountered in day to day AI and research work.</p>
+        </div>
+    </section>
+
+    <section id="description-container">
+        <div class="text-container">
+            <h3>Docling Custom OCR Plugin</h3>
+            <p>While integrating a custom OCR service with Docling to process uploaded documents, generate chunks, and create embeddings for downstream AI workflows, we found that Docling officially supports custom OCR integration but has no clear or maintainable way to implement it. The common approach was to modify the library's source code directly, which creates a long-term maintenance problem since those changes can be lost or become incompatible on every library update.</p>
+            <p>After digging deeper into Docling's architecture, we found a cleaner solution: implementing the integration through a plugin-based approach instead of modifying the library itself. The result is a reusable plugin that lets users connect their own OCR service simply by configuring an OCR endpoint through environment variables. Once installed, it works seamlessly with Docling's existing pipeline — upload a document, let the OCR process the content, and Docling handles the rest.</p>
+            <p>The project has been open-sourced for the broader community.</p>
+            <p><a href="https://lnkd.in/dCmzwuDA" target="_blank" rel="noopener">GitHub Repository</a></p>
+        </div>
+
+        <div class="video-container">
+            <iframe src="https://drive.google.com/file/d/1zgm5mTNMhmupfCjr2Fk6D6HGiHSRgu2P/preview" allow="autoplay" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="description-container">
+        <div class="text-container">
+            <h3>Arabic OCR Translator (Chrome Extension)</h3>
+            <p>Built while preparing for an Arabic language exam covering books entirely in Arabic. No Chrome extension fit the need of translating selected Arabic text inline, right where it was being read, without switching tabs or copy-pasting into Google Translate — so I built one.</p>
+            <p>The extension translates any text selected on any Chrome page and displays the translation in a floating popup right next to the selection. For Quranic text specifically, it also identifies the verse and shows the surah reference alongside the translation.</p>
+            <p>The more interesting challenge was scanned PDFs — books that are images, not selectable text. For that, OCR support was added with three backends depending on setup: a local Tesseract.js server (Node, fully offline, no API key), a local EasyOCR server (Python, deep learning, higher accuracy), and the OCR.space cloud API (no local setup, free tier). The extension also intercepts PDF navigation and loads files through a built-in viewer so translation works there too.</p>
+            <p>The whole project is open source.</p>
+            <p><a href="https://lnkd.in/daVRt-j4" target="_blank" rel="noopener">GitHub Repository</a></p>
+        </div>
+
+        <div class="video-container">
+            <iframe src="https://drive.google.com/file/d/19ioWh8yNizgTgVLmg0gjF6EZhuh7xWcV/preview" allow="autoplay" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <footer class="footer-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer-text text-center">
+                        <p>&copy; All rights reserved to Wajahat Ahmed.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <script src="../assets/js/theme-switcher.js" defer></script>
+</body>
+</html>

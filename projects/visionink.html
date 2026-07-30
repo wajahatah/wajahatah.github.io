@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VisionInk-AI Air Studio</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/nav.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons/css/academicons.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/mobile-project-responsive.css">
+    <link rel="stylesheet" href="../assets/css/pages-dark-theme.css">
+    <style>
+        @media screen and (min-width: 769px) {
+            #description-container .text-container {
+                flex: 2 2 0%;
+            }
+            #description-container .image-container {
+                flex: 2 2 0%;
+                min-width: 0;
+            }
+            #description-container .image-container img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
+        <div class="container">
+            <a class="navbrand-name" href="../project.html">VisionInk-AI Air Studio</a>
+            <button onclick="goBack()" class="back-button">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+        </div>
+    </nav>
+
+    <section id="description-container">
+        <div class="text-container">
+            <h2>VisionInk-AI Air Studio</h2>
+            <p>An experimentation project exploring Vision-Language Models (VLM), diffusion, and CLIP together. The plan is to implement a VLM that properly detects what the user is writing in the air or on a surface, then generate an image based on that text. When the user draws an object instead, the VLM detects it and converts it into proper text or an image, as per the user's need. The VLM will be fine-tuned further and more features will be implemented soon.</p>
+        </div>
+
+        <div class="image-container">
+            <img src="../assets/img/visionink/image.png" alt="VisionInk-AI Air Studio Demo">
+            <!-- Add more images here -->
+        </div>
+    </section>
+
+    <section id="video">
+        <!-- Add project video(s) here. Example:
+        <div class="video-container">
+            <iframe src="https://drive.google.com/file/d/YOUR_FILE_ID/preview" allow="autoplay" frameborder="0" allowfullscreen></iframe>
+        </div>
+        -->
+    </section>
+
+    <footer class="footer-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer-text text-center">
+                        <p>&copy; All rights reserved to Wajahat Ahmed.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <script src="../assets/js/theme-switcher.js" defer></script>
+</body>
+</html>

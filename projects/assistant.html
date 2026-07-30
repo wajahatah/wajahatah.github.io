@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal AI Assistant</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/nav.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons/css/academicons.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/mobile-project-responsive.css">
+    <link rel="stylesheet" href="../assets/css/pages-dark-theme.css">
+    <style>
+        #gallery-container {
+            padding: 0 40px 40px;
+        }
+        .image-gallery {
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .image-gallery img {
+            width: 30%;
+            min-width: 260px;
+            flex: 1 1 260px;
+        }
+        @media screen and (max-width: 768px) {
+            #gallery-container {
+                padding: 0 20px 20px;
+            }
+            .image-gallery img {
+                width: 100%;
+                min-width: 0;
+            }
+        }
+    </style>
+</head>
+<script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
+        <div class="container">
+            <a class="navbrand-name" href="../project.html">Personal AI Assistant</a>
+            <button onclick="goBack()" class="back-button">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+        </div>
+    </nav>
+
+    <section id="description-container">
+        <div class="text-container">
+            <h2>Personal AI Assistant</h2>
+            <p>A progress-aware conversational task assistant for daily task management on Telegram and Discord. Users describe their tasks in natural language, the assistant preprocesses them into structured tasks with a start time and deadline, and then tracks each task's progress, reminding and checking in with the user interactively as the deadline approaches.</p>
+
+            <h3>Key Responsibilities</h3>
+            <ul>
+                <li>Parsed tasks from free-form natural language using a pluggable LLM layer (OpenAI, Gemini, Anthropic, Ollama, HuggingFace), validating deadlines and durations before persisting them</li>
+                <li>Designed a deterministic, rule-based state inference engine (no ML) to track each task's progress through NOT_STARTED, ACTIVE, AT_RISK, STALLED, COMPLETED, and DROPPED states</li>
+                <li>Built an intervention engine that decides when to send reminders, status polls, urgent polls, and escalations based on time remaining, with cooldowns to avoid over-notifying the user</li>
+                <li>Implemented a platform-adapter layer so the same core logic runs over both Telegram and Discord through a single normalized message interface</li>
+                <li>Added per-user clock-offset calibration so reminders and the daily summary fire at the user's actual local time regardless of server timezone</li>
+                <li>Built a conversational HELP flow where the assistant interactively chats with the user through an LLM when they're stuck on a task, keeping full conversation history per task</li>
+                <li>Built a daily summary dispatcher that reports completed and stalled tasks along with the day's agenda at the user's configured local time</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="gallery-container">
+        <div class="image-gallery">
+            <img src="../assets/img/assistant/Screenshot 2026-04-21 124233.png" alt="Personal AI Assistant screenshot">
+            <img src="../assets/img/assistant/Screenshot 2026-04-25 050944.png" alt="Personal AI Assistant screenshot">
+            <img src="../assets/img/assistant/Screenshot 2026-04-25 051700.png" alt="Personal AI Assistant screenshot">
+            <img src="../assets/img/assistant/Screenshot 2026-04-25 054850.png" alt="Personal AI Assistant screenshot">
+            <img src="../assets/img/assistant/Screenshot 2026-04-25 055417.png" alt="Personal AI Assistant screenshot">
+            <img src="../assets/img/assistant/Screenshot 2026-04-25 060016.png" alt="Personal AI Assistant screenshot">
+            <img src="../assets/img/assistant/Screenshot 2026-04-25 152234.png" alt="Personal AI Assistant screenshot">
+            <img src="../assets/img/assistant/Screenshot 2026-04-25 152312.png" alt="Personal AI Assistant screenshot">
+            <img src="../assets/img/assistant/Screenshot 2026-04-25 162650.png" alt="Personal AI Assistant screenshot">
+            <img src="../assets/img/assistant/Screenshot 2026-04-25 164142.png" alt="Personal AI Assistant screenshot">
+            <img src="../assets/img/assistant/Screenshot 2026-06-07 152219.png" alt="Personal AI Assistant screenshot">
+            <img src="../assets/img/assistant/Screenshot 2026-06-07 152235.png" alt="Personal AI Assistant screenshot">
+            <img src="../assets/img/assistant/Screenshot 2026-06-07 152247.png" alt="Personal AI Assistant screenshot">
+            <img src="../assets/img/assistant/Screenshot 2026-06-07 152303.png" alt="Personal AI Assistant screenshot">
+        </div>
+    </section>
+
+    <footer class="footer-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer-text text-center">
+                        <p>&copy; All rights reserved to Wajahat Ahmed.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="../assets/js/theme-switcher.js" defer></script>
+</body>
+</html>
