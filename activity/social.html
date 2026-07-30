@@ -6,6 +6,9 @@
     <title>Social Work</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../assets/css/theme-variables.css" />
     <link rel="stylesheet" type="text/css" href="../assets/css/nav.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons/css/academicons.min.css">
@@ -24,25 +27,10 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
         <div class="container">
-            <a class="navbrand-name" href="../activities.html">Activities</a>
+            <a class="navbrand-name" href="../project.html">Social Work</a>
             <button onclick="goBack()" class="back-button">
                 <i class="fas fa-arrow-left"></i>
             </button>
-            <div class="menu-toggle" id="menu-toggle">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-            <div class="collapse navbar-collapse" id="main-navbar">
-                <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
-                    <li class="nav-item"><a class="nav-link" href="conf.html">Conferences & Workshops</a></li>
-                    <li class="nav-item"><a class="nav-link" href="arm.html">Robotic Arm</a></li>
-                    <li class="nav-item"><a class="nav-link" href="expo.html">Project Expos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="society.html">Student Societies Events</a></li>
-                    <li class="nav-item"><a class="nav-link" href="industry.html">Industrial Visits</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="social.html">Social Work</a></li>
-                </ul>
-            </div>
         </div>
     </nav>
     <!-- Navbar End -->
@@ -114,27 +102,6 @@
         function goBack() {
             window.history.back();
         }
-
-        // Mobile menu toggle
-        document.addEventListener('DOMContentLoaded', function() {
-            const menuToggle = document.getElementById('menu-toggle');
-            const navbarCollapse = document.getElementById('main-navbar');
-            
-            menuToggle.addEventListener('click', function() {
-                menuToggle.classList.toggle('active');
-                navbarCollapse.classList.toggle('show');
-            });
-
-            // Close menu when clicking outside
-            document.addEventListener('click', function(event) {
-                const isClickInside = navbarCollapse.contains(event.target) || menuToggle.contains(event.target);
-                
-                if (!isClickInside && navbarCollapse.classList.contains('show')) {
-                    navbarCollapse.classList.remove('show');
-                    menuToggle.classList.remove('active');
-                }
-            });
-        });
     </script>
     <script src="../assets/js/theme-switcher.js" defer></script>
 

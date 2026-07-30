@@ -6,6 +6,10 @@
     <title>Resume</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/theme-variables.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/resume.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/nav-index.css" />
@@ -33,7 +37,6 @@
             <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
             <li class="nav-item"><a class="nav-link" href="publication.html">Publications & Awards</a></li>
             <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
-            <li class="nav-item"><a class="nav-link" href="activities.html">Activities</a></li>
             <li class="nav-item"><a class="nav-link active" href="resume.html">Resume</a></li>
             <li class="nav-item desktop-theme-switcher-li"><button id="desktop-theme-switcher-btn" class="theme-btn"> <i class="fas fa-sun"></i> <i class="fas fa-moon"></i> </button></li>
             <!-- <li class="nav-item"><button id='theme-switcher'>Toggle Theme</button></li> -->
@@ -46,16 +49,16 @@
     <!-- Resume Section Start -->
     <div id="cv-resume" class="cv-section-padding">
       <div class="cv-container">
+        <a href="https://docs.google.com/document/d/1qm0u7vdG5N21hVCfQOZSB38E0EnI7ngg/export?format=pdf"
+        download class="btn btn-primary cv-download-btn">
+              Download CV
+          </a>
         <div class="row">
           <div class="col-lg-6 col-md-6 col-sm-12">
-            <div class="cv-education wow fadeInRight" data-wow-delay="0.3s">
-              <a href="https://docs.google.com/document/d/1qm0u7vdG5N21hVCfQOZSB38E0EnI7ngg/export?format=pdf" 
-              download class="btn btn-primary cv-download-btn">
-                    Download CV
-                </a>
+            <div class="cv-education" data-aos="fade-right">
               <ul class="cv-timeline">
                 <li>
-                  <i class="cv-icon-graduation"></i>
+                  <i class="cv-icon-graduation fas fa-graduation-cap"></i>
                   <h2 class="cv-timelin-title">Education</h2>
                 </li>
                 <li>
@@ -69,7 +72,7 @@
               </ul>
               <ul class="cv-timeline">
                 <li>
-                  <i class="cv-icon-skills"></i>
+                  <i class="cv-icon-skills fas fa-laptop-code"></i>
                   <h2 class="cv-timelin-title">Skills</h2>
                 </li>
                 <li><div class="cv-content-text">
@@ -94,7 +97,7 @@
               </ul>
               <ul class="cv-timeline">
                 <li>
-                  <i class="cv-icon-skills"></i>
+                  <i class="cv-icon-skills fas fa-user-graduate"></i>
                   <h2 class="cv-timelin-title">Internships</h2>
                 </li>
                 <li><div class="cv-content-text"><h4 class="cv-line-text">Reasearch Intern: Neurocomputation Lab</h4>
@@ -130,10 +133,10 @@
             </div>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12">
-            <div class="cv-experience wow fadeInRight" data-wow-delay="0.6s">
+            <div class="cv-experience" data-aos="fade-left">
               <ul class="cv-timeline">
                 <li>
-                  <i class="cv-icon-briefcase"></i>
+                  <i class="cv-icon-briefcase fas fa-briefcase"></i>
                   <h2 class="cv-timelin-title">Experience</h2>
                 </li>
                 <li>
@@ -301,5 +304,10 @@
     </script>
 
         <script src="assets/js/theme-switcher.js" defer></script>
+
+        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+        <script>
+          AOS.init({ once: true, offset: 60, duration: 600 });
+        </script>
 </body>
 </html>

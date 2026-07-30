@@ -1,5 +1,5 @@
 body.dark-theme {
-    background-color: #121212 !important; /* Important to override existing styles */
+    background-color: var(--dark-bg) !important; /* Important to override existing styles */
     color: #e0e0e0 !important;
 }
 
@@ -20,7 +20,7 @@ body.dark-theme a {
 }
 
 body.dark-theme .navbar {
-    background-color: #1e1e1e !important;
+    background-color: var(--dark-surface) !important;
     border-bottom: 1px solid #333333 !important;
 }
 
@@ -30,16 +30,16 @@ body.dark-theme .navbar-nav .nav-link {
 
 body.dark-theme .navbar-nav .nav-link:hover,
 body.dark-theme .navbar-nav .nav-link.active {
-    color: #00b4d9 !important;
+    color: var(--accent) !important;
 }
 
 body.dark-theme .footer-area {
-    background-color: #121212 !important;
+    background-color: var(--dark-bg) !important;
     color: #e0e0e0 !important;
 }
 
 body.dark-theme .footer-area a {
-    color: #00b4d9 !important;
+    color: var(--accent) !important;
 }
 
 /* Add more specific styles as needed below */
@@ -58,7 +58,7 @@ body.dark-theme .footer-area a {
 }
 
 .theme-btn:hover {
-    color: #00b4d9; /* Highlight color on hover */
+    color: var(--accent); /* Highlight color on hover */
 }
 
 .theme-btn .fa-sun,
@@ -89,7 +89,7 @@ body.dark-theme .theme-btn {
 }
 
 body.dark-theme .theme-btn:hover {
-    color: #00b4d9; /* Highlight color on hover for dark theme */
+    color: var(--accent); /* Highlight color on hover for dark theme */
 }
 
 /* body.dark-theme .theme-btn .fa-sun { */
@@ -107,21 +107,23 @@ body.dark-theme .theme-btn .fa-sun {
 }
 
 body.dark-theme .back-button {
-    background-color: #1e1e1e !important;
+    background-color: var(--dark-surface) !important;
     color: #e0e0e0 !important;
     padding-right: 1px;
     /* border: 1px solid #e0e0e0 !important; */
 }
 
 body.dark-theme .back-button:hover {
-    background-color: #00b4d9 !important;
-    color: #1e1e1e !important;
-    border-color: #00b4d9 !important;
+    background-color: var(--accent) !important;
+    color: var(--dark-surface) !important;
+    border-color: var(--accent) !important;
 }
 
-body.dark-theme .navbar-collapse {
-    background: rgba(30, 30, 30, 0.98) !important;
-    backdrop-filter: blur(10px) !important;
+@media screen and (max-width: 768px) {
+    body.dark-theme .navbar-collapse {
+        background: rgba(20, 27, 46, 0.98) !important;
+        backdrop-filter: blur(10px) !important;
+    }
 }
 
 body.dark-theme .menu-toggle .bar {
@@ -133,9 +135,9 @@ body.dark-theme .navbar-nav .nav-link {
 }
 
 body.dark-theme .navbar-nav .nav-link:hover {
-    color: #00b4d9 !important;
+    color: var(--accent) !important;
 }
 
 body.dark-theme .navbar-nav .nav-link::after {
-    background: #00b4d9 !important;
+    background: var(--accent) !important;
 }

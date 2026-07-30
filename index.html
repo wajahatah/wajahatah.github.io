@@ -6,6 +6,10 @@
     <title>Index</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/theme-variables.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/nav-index.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -48,7 +52,6 @@
           <!-- //  <li class="nav-item"><a class="nav-link" href="about.html">About</a></li> -->
             <li class="nav-item"><a class="nav-link" href="publication.html">Publications & Awards</a></li>
             <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
-            <li class="nav-item"><a class="nav-link" href="activities.html">Activities</a></li>
             <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
             <!-- <li class="nav-item"><button id='theme-switcher'>Toggle Theme</button></li> -->
             <!-- <li class="nav-item"><button id="theme-switcher" class="theme-btn"> <i class="fas fa-sun"></i> <i class="fas fa-moon"></i> </button></li> -->
@@ -58,33 +61,41 @@
       </div>
     </nav>
     
+    <section id="hero" class="hero-section">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <div class="hero-photo" data-aos="fade-right" data-aos-duration="800">
+          <img src="assets/img/about/pic2.png" alt="Wajahat Ahmed" />
+        </div>
+        <div class="hero-text" data-aos="fade-left" data-aos-duration="800">
+          <h1>Wajahat Ahmed</h1>
+          <p class="hero-tagline">I'm a <span class="hero-typed" id="hero-typed"></span></p>
+          <a href="#about" class="btn btn-common hero-scroll-btn">View My Work</a>
+        </div>
+      </div>
+    </section>
+
     <section id="about" class="section-padding">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-          <!-- <div class="col-lg-6 mb-6"> -->
-            <div class="img-thumb wow fadeInLeft" data-wow-delay="0.3s">
-              <img class="img-fluid" src="assets/img/about/pic2.png" alt="" />
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <div class="profile-wrapper wow fadeInRight" data-wow-delay="0.3s">
+            <div class="profile-wrapper" data-aos="fade-right" data-aos-duration="800">
               <h2>Wajahat Ahmed</h2>
               <p>
-                I am an AI and robotics researcher with extensive experience in research and development, 
-                specializing in machine learning, computer vision, deep learning, firmware development, 
-                embedded systems, and IoT solutions. Currently, I work as an AI Developer at Lambda Theta,  
-                a software house, where I focus on exploring and implementing different stragedies to solve 
+                I am an AI and robotics researcher with extensive experience in research and development,
+                specializing in machine learning, computer vision, deep learning, firmware development,
+                embedded systems, and IoT solutions. Currently, I work as an AI Developer at Lambda Theta,
+                a software house, where I focus on exploring and implementing different stragedies to solve
                 practical challenges in Machine Learning, Computer Vision and Deep Learning. </p>
               <p>
-                Throughout my career, I have collaborated with renowned organizations, including Aga Khan 
-                University Hospital, AIM Motors, Dawlance, Agri Autos, T-Side University scholars, and others, 
-                developing innovative AI and IoT driven solutions tailored to their needs. Beyond my professional 
-                role, I am also a co-founder of a startup focused on AI and software solutions, driving 
+                Throughout my career, I have collaborated with renowned organizations, including Aga Khan
+                University Hospital, AIM Motors, Dawlance, Agri Autos, T-Side University scholars, and others,
+                developing innovative AI and IoT driven solutions tailored to their needs. Beyond my professional
+                role, I am also a co-founder of a startup focused on AI and software solutions, driving
                 cutting-edge technological advancements. </p>
               <p>
-                In addition to my technical expertise, I actively lead projects, conferences, student 
-                society events, and social initiatives, demonstrating strong leadership, fostering knowledge-sharing 
+                In addition to my technical expertise, I actively lead projects, conferences, student
+                society events, and social initiatives, demonstrating strong leadership, fostering knowledge-sharing
                 and engagement within the tech community.
               </p>
               <div class="about-profile">
@@ -93,7 +104,7 @@
                     <li>
                       <a class="orcid" href="https://orcid.org/0009-0008-9215-9807" target = "_blank">
                         <i class="fab fa-orcid fa-2x"></i></a>
-                    </li> 
+                    </li>
                      <li>
                       <a class="google scholar" href="https://scholar.google.com/citations?hl=en&authuser=1&user=tLXgrq0AAAAJ" target = "_blank">
                         <i class="ai ai-google-scholar ai-2x"></i></a>
@@ -105,7 +116,7 @@
                     <li>
                       <a class="linkedin" href="https://www.linkedin.com/in/wajahat-ahmed-hashmi/" target = "_blank" >
                         <i class="fab fa-linkedin fa-2x"></i></a>
-                    </li> 
+                    </li>
                      <li>
                       <a class="google" href="https://mail.google.com/mail/?view=cm&fs=1&to=wajahat.ahmedhashmi@gmail.com" target = "_blank">
                         <i class="fab fa-google fa-2x"></i></a>
@@ -121,6 +132,47 @@
                   </ul>
                 </ul>
               </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="experience-summary" data-aos="fade-left" data-aos-duration="800">
+              <div class="experience-headline">
+                <span class="experience-number">4+</span>
+                <span class="experience-label">Years of Experience</span>
+              </div>
+
+              <div class="experience-entry">
+                <div class="experience-entry-header">
+                  <h3>AI Developer</h3>
+                  <span class="experience-dates">Sep 2024 - Present</span>
+                </div>
+                <p class="experience-org">Lambda Theta</p>
+                <div class="experience-tags">
+                  <span>Computer Vision</span>
+                  <span>Machine Learning</span>
+                  <span>RAG</span>
+                  <span>LLMs</span>
+                  <span>VLMs</span>
+                </div>
+              </div>
+
+              <div class="experience-entry">
+                <div class="experience-entry-header">
+                  <h3>Research Assistant</h3>
+                  <span class="experience-dates">Aug 2022 - Sep 2024</span>
+                </div>
+                <p class="experience-org">Neurocomputation Lab, NCAI - NED</p>
+                <div class="experience-tags">
+                  <span>Computer Vision</span>
+                  <span>Machine Learning</span>
+                  <span>Robotics</span>
+                  <span>Embedded Systems</span>
+                  <span>IoT</span>
+                  <span>AIoT</span>
+                </div>
+              </div>
+
+              <a href="resume.html" class="experience-more-link">See full resume &rarr;</a>
             </div>
           </div>
         </div>
@@ -205,6 +257,21 @@
     </script>
 
     <script src="assets/js/theme-switcher.js" defer></script>
-    
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      AOS.init({ once: true, offset: 80 });
+
+      new Typed('#hero-typed', {
+        strings: ['AI Developer', 'Computer Vision Engineer', 'Robotics Researcher', 'Embedded Systems Engineer'],
+        typeSpeed: 55,
+        backSpeed: 30,
+        backDelay: 1500,
+        startDelay: 300,
+        loop: true
+      });
+    </script>
+
 </body>
 </html>

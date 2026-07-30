@@ -1,5 +1,5 @@
 body.dark-theme {
-    background-color: #121212 !important; /* Important to override existing styles */
+    background-color: var(--dark-bg) !important; /* Important to override existing styles */
     color: #e0e0e0 !important;
 }
 
@@ -17,7 +17,7 @@ body.dark-theme a {
 }
 
 body.dark-theme .navbar {
-    background-color: #1e1e1e !important;
+    background-color: var(--dark-surface) !important;
     border-bottom: 1px solid #333333 !important;
 }
 
@@ -27,16 +27,16 @@ body.dark-theme .navbar-nav .nav-link {
 
 body.dark-theme .navbar-nav .nav-link:hover,
 body.dark-theme .navbar-nav .nav-link.active {
-    color: #00b4d9 !important;
+    color: var(--accent) !important;
 }
 
 body.dark-theme .footer-area {
-    background-color: #1e1e1e !important;
+    background-color: var(--dark-surface) !important;
     color: #e0e0e0 !important;
 }
 
 body.dark-theme .footer-area a {
-    color: #00b4d9 !important;
+    color: var(--accent) !important;
 }
 
 /* Add more specific styles as needed below */
@@ -55,7 +55,7 @@ body.dark-theme .footer-area a {
 }
 
 .theme-btn:hover {
-    color: #00b4d9; /* Highlight color on hover */
+    color: var(--accent); /* Highlight color on hover */
 }
 
 .theme-btn .fa-sun,
@@ -86,7 +86,7 @@ body.dark-theme .theme-btn {
 }
 
 body.dark-theme .theme-btn:hover {
-    color: #00b4d9; /* Highlight color on hover for dark theme */
+    color: var(--accent); /* Highlight color on hover for dark theme */
 }
 
 /* body.dark-theme .theme-btn .fa-sun { */
@@ -122,13 +122,13 @@ body:not(.dark-theme) .theme-btn .fa-sun {
 
 /* Social Media Icons in Dark Theme */
 body.dark-theme .social-icon li a {
-    background-color: #121212 !important;
+    background-color: var(--dark-bg) !important;
     color: #e0e0e0 !important;
     transition: color 0.3s ease;
 }
 
 body.dark-theme .social-icon li a:hover {
-    color: #00b4d9 !important;
+    color: var(--accent) !important;
 }
 
 /* Specific icon colors in dark theme */
@@ -149,24 +149,24 @@ body.dark-theme .social-icon li a.google:hover i,
 body.dark-theme .social-icon li a.contact:hover i,
 body.dark-theme .social-icon li a.whatsapp:hover i,
 body.dark-theme .social-icon li a[class*="scholar"]:hover i {
-    color: #00b4d9 !important;
+    color: var(--accent) !important;
 }
 
 /* Resume Page Dark Theme Styles */
 body.dark-theme .cv-container {
-    /* background-color: #1e1e1e !important; */
-    background-color: #121212 !important;
+    /* background-color: var(--dark-surface) !important; */
+    background-color: var(--dark-bg) !important;
 }
 
 body.dark-theme .cv-education,
 body.dark-theme .cv-experience {
-    /* background-color: #1e1e1e !important; */
-    background-color: #121212 !important;
+    /* background-color: var(--dark-surface) !important; */
+    background-color: var(--dark-bg) !important;
 }
 
 body.dark-theme .cv-content-text {
-    background-color: #1e1e1e !important;
-    /* background-color: #121212 !important; */
+    background-color: var(--dark-surface) !important;
+    /* background-color: var(--dark-bg) !important; */
     color: #e0e0e0 !important;
     padding: 15px !important;
     border-radius: 5px !important;
@@ -194,25 +194,25 @@ body.dark-theme .cv-timeline li span {
 
 body.dark-theme .cv-download-btn {
     background-color: #f4f2f5 !important;
-    color: #1e1e1e !important;
+    color: var(--dark-surface) !important;
     border: none !important;
 }
 
 body.dark-theme .cv-download-btn:hover {
-    background-color: #00b4d9 !important;
+    background-color: var(--accent) !important;
 }
 
 /* Project Page Dark Theme Styles */
 body.dark-theme #portfolios {
-    background-color: #121212 !important;
+    background-color: var(--dark-bg) !important;
 }
 
 body.dark-theme .projects .container {
-    background-color: #121212 !important;
+    background-color: var(--dark-bg) !important;
 }
 
 body.dark-theme .projects .box {
-    background-color: #1e1e1e !important;
+    background-color: var(--dark-surface) !important;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3) !important;
 }
 
@@ -230,15 +230,15 @@ body.dark-theme .section-title {
 
 /* Publication Page Dark Theme Styles */
 body.dark-theme #services {
-    background-color: #121212 !important;
+    background-color: var(--dark-bg) !important;
 }
 
 body.dark-theme .articles-container {
-    background-color: #121212 !important;
+    background-color: var(--dark-bg) !important;
 }
 
 body.dark-theme .articles-box {
-    background-color: #1e1e1e !important;
+    background-color: var(--dark-surface) !important;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3) !important;
 }
 
@@ -251,11 +251,11 @@ body.dark-theme .article-title a {
 }
 
 body.dark-theme .article-title a:hover {
-    color: #00b4d9 !important;
+    color: var(--accent) !important;
 }
 
 body.dark-theme .award-box {
-    background-color: #1e1e1e !important;
+    background-color: var(--dark-surface) !important;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3) !important;
     border-left: 5px solid #f8f8f8; 
 
@@ -280,26 +280,28 @@ body.dark-theme .award {
 }
 
 body.dark-theme .separator {
-    background-color: #1e1e1e !important;
+    background-color: var(--dark-surface) !important;
 }
 
 /* Project Pages Back Button Dark Theme */
 body.dark-theme .back-button {
-    background-color: #1e1e1e !important;
+    background-color: var(--dark-surface) !important;
     color: #e0e0e0 !important;
     border: 1px solid #e0e0e0 !important;
 }
 
 body.dark-theme .back-button:hover {
-    background-color: #00b4d9 !important;
-    color: #1e1e1e !important;
-    border-color: #00b4d9 !important;
+    background-color: var(--accent) !important;
+    color: var(--dark-surface) !important;
+    border-color: var(--accent) !important;
 }
 
 /* Hamburger Menu Dark Theme */
-body.dark-theme .navbar-collapse {
-    background: rgba(30, 30, 30, 0.98) !important;
-    backdrop-filter: blur(10px) !important;
+@media screen and (max-width: 768px) {
+    body.dark-theme .navbar-collapse {
+        background: rgba(20, 27, 46, 0.98) !important;
+        backdrop-filter: blur(10px) !important;
+    }
 }
 
 body.dark-theme .menu-toggle .bar {
@@ -311,9 +313,9 @@ body.dark-theme .navbar-nav .nav-link {
 }
 
 body.dark-theme .navbar-nav .nav-link:hover {
-    color: #00b4d9 !important;
+    color: var(--accent) !important;
 }
 
 body.dark-theme .navbar-nav .nav-link::after {
-    background: #00b4d9 !important;
+    background: var(--accent) !important;
 }

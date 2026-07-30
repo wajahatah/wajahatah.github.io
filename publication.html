@@ -6,6 +6,11 @@
     <title>Services</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/theme-variables.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/publication.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/nav-index.css" />
@@ -34,7 +39,6 @@
             <!-- <li class="nav-item"><a class="nav-link" href="about.html">About</a></li> -->
             <li class="nav-item"><a class="nav-link active" href="publication.html">Publications & Awards</a></li>
             <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
-            <li class="nav-item"><a class="nav-link" href="activities.html">Activities</a></li>
             <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
             <li class="nav-item desktop-theme-switcher-li"><button id="desktop-theme-switcher-btn" class="theme-btn"> <i class="fas fa-sun"></i> <i class="fas fa-moon"></i> </button></li>
           </ul>
@@ -44,14 +48,14 @@
     <!-- Navbar End -->
     <!-- Services Section Start -->
   <section id="services" class="services section-padding" style="padding-top: 90px;">
-    <h2 class="section-title wow flipInX" data-wow-delay="0.2s">Publications</h2>
+    <h2 class="section-title" data-aos="fade-up">Publications</h2>
     <!-- <div class="awards"></div> -->
     <!-- <h3>Publications</h3> -->
     <div class="container">
       <div class="row">
 
         <div class="articles-container">
-          <div class="articles-box">
+          <div class="articles-box" data-aos="fade-up">
             <!-- <div> -->
             <h3>Published Articles</h3>
             <ul>
@@ -66,7 +70,7 @@
               <!-- </div> -->
             </ul>
           </div>
-          <div class="articles-box">
+          <div class="articles-box" data-aos="fade-up" data-aos-delay="100">
             <!-- <div> -->
             <h3>Submitted Articles</h3>
             <ul>
@@ -98,36 +102,34 @@
 <section id="services" class="services section-padding" style="padding-top: 30px;"> 
 
   <!-- <div class="awards"> -->
-    <h2 class="section-title wow flipInX" data-wow-delay="0.2s">Awards</h2>
+    <h2 class="section-title" data-aos="fade-up">Awards</h2>
     <!-- <h3>Awards & Recognitions</h3> -->
     <div class="container">
       <div class="row">
 
         <div class="articles-container">
-          <div class="awards">
+          <div class="awards" data-aos="fade-up">
             <div class="award-box">
                 <div class="award-text-container">
                     <h3 class="award-title">Gold Medalist</h3>
                     <p class="award-description">Gold Medal for academic excellence in completing Bachelor's degree</p>
                 </div>
-                <!-- <img src="assets/img/extra/gold1.jpg" alt="Award" class="award-image"> -->
-                <a href="assets/img/extra/gold1.jpg" data-lightbox="lucobot-gallery" data-title="Image 1">
+                <a href="assets/img/extra/gold1.jpg" class="glightbox" data-gallery="awards" data-title="Gold Medalist">
                   <img src="assets/img/extra/gold1.jpg" alt="Award" class="award-image">
               </a>
             </div>
           </div>
 
 
-          <div class="awards">
+          <div class="awards" data-aos="fade-up" data-aos-delay="100">
             <div class="award-box">
                 <div class="award-text-container">
                     <!-- <h3 class="award-title">Runner Up in Engineering Excellence Award</h3> -->
                     <h3 class="award-title">Engineering Excellence Award</h3>
-                    <p class="award-description">Runner up in Ali Suleman Habib 2nd Engineering Excellence Award 
+                    <p class="award-description">Runner up in Ali Suleman Habib 2nd Engineering Excellence Award
                       on presenting the RoboDoc</p>
                 </div>
-                <!-- <img src="assets/img/robodoc/imgb.jpg" alt="Award" class="award-image"> -->
-                <a href="assets/img/robodoc/imgb.jpg" data-lightbox="lucobot-gallery" data-title="Image 1">
+                <a href="assets/img/robodoc/imgb.jpg" class="glightbox" data-gallery="awards" data-title="Engineering Excellence Award">
                   <img src="assets/img/robodoc/imgb.jpg" alt="Award" class="award-image">
               </a>
               </div>
@@ -137,7 +139,7 @@
 </section>
   
   <!-- <section id="services" class="services section-padding" style="padding-top: 90px;"> 
-    <h2 class="section-title wow flipInX" data-wow-delay="0.2s">Awards</h2>
+    <h2 class="section-title" data-aos="fade-up">Awards</h2>
     <div class="container">
       <div class="row">
         <div class="box">
@@ -289,6 +291,13 @@
     </script>
 
         <script src="assets/js/theme-switcher.js" defer></script>
+
+        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+        <script>
+          AOS.init({ once: true, offset: 60, duration: 600 });
+          GLightbox({ selector: '.glightbox' });
+        </script>
 
 </body>
 </html>

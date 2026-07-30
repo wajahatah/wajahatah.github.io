@@ -1,10 +1,230 @@
-/* */
+/* Hero Section */
+.hero-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 140px 20px 60px;
+    background: linear-gradient(135deg, var(--surface-dark) 0%, #17213D 100%);
+    overflow: hidden;
+    text-align: left;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(circle at 20% 20%, rgba(var(--accent-rgb), 0.25), transparent 45%),
+        radial-gradient(circle at 80% 80%, rgba(var(--accent-2-rgb), 0.2), transparent 45%);
+    pointer-events: none;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.hero-photo {
+    flex-shrink: 0;
+}
+
+.hero-photo img {
+    display: block;
+    height: 78vh;
+    max-height: 720px;
+    width: auto;
+    max-width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(var(--accent-rgb), 0.25);
+}
+
+.hero-text {
+    max-width: 560px;
+}
+
+.hero-text h1 {
+    font-family: var(--font-heading);
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.hero-tagline {
+    font-family: var(--font-heading);
+    font-size: 22px;
+    font-weight: 500;
+    color: #e6e6f5;
+    margin-bottom: 30px;
+}
+
+.hero-typed {
+    color: var(--accent-2);
+    font-weight: 700;
+    border-right: 2px solid var(--accent-2);
+    padding-right: 4px;
+}
+
+.hero-scroll-btn {
+    background-color: var(--accent);
+}
+
+.hero-scroll-btn:hover {
+    background-color: var(--accent-2);
+}
+
+@media screen and (max-width: 900px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero-section {
+        min-height: auto;
+        padding: 110px 20px 60px;
+    }
+
+    .hero-photo img {
+        height: 48vh;
+        max-height: 380px;
+    }
+
+    .hero-text h1 {
+        font-size: 34px;
+    }
+
+    .hero-tagline {
+        font-size: 18px;
+    }
+}
+
+/* Homepage Experience Summary */
+.experience-summary {
+    height: 100%;
+}
+
+.experience-headline {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.experience-number {
+    font-family: var(--font-heading);
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.experience-label {
+    font-family: var(--font-heading);
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.experience-entry {
+    background: #fff;
+    border-left: 4px solid var(--accent);
+    border-radius: 8px;
+    padding: 20px 22px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.experience-entry-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.experience-entry-header h3 {
+    font-family: var(--font-heading);
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.experience-dates {
+    font-family: var(--font-heading);
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--accent-2);
+    white-space: nowrap;
+}
+
+.experience-org {
+    font-size: 14px;
+    color: #666;
+    margin: 4px 0 12px;
+}
+
+.experience-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.experience-tags span {
+    font-family: var(--font-heading);
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--accent);
+    background: rgba(var(--accent-rgb), 0.1);
+    border-radius: 20px;
+    padding: 4px 12px;
+}
+
+.experience-more-link {
+    display: inline-block;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    color: var(--accent);
+    margin-top: 5px;
+}
+
+.experience-more-link:hover {
+    color: var(--accent-2);
+}
+
+body.dark-theme .experience-label {
+    color: #e0e0e0;
+}
+
+body.dark-theme .experience-entry {
+    background: #1e1e1e;
+}
+
+body.dark-theme .experience-org {
+    color: #b0b0b0;
+}
+
+@media screen and (max-width: 768px) {
+    .experience-summary {
+        margin-top: 20px;
+    }
+}
 
 .text-container {
     width: 100%;
     margin-bottom: 20px;
     max-width: 100%;
-    text-align: justify; 
+    text-align: justify;
     flex: 1;
 }
 .text-container p {

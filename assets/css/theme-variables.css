@@ -1,0 +1,26 @@
+/* Global theme tokens for the portfolio redesign. Consumed by main.css,
+   nav.css, nav-index.css, dark-theme.css, pages-dark-theme.css, styles.css,
+   projects.css, resume.css, publication.css. Load this before those files. */
+
+:root {
+  --accent: #1E88E5;
+  --accent-2: #16C79A;
+  --accent-rgb: 30, 136, 229;
+  --accent-2-rgb: 22, 199, 154;
+
+  --surface-dark: #0B1120;
+  --surface-light: #F8F9FC;
+
+  /* Navy-tinted dark mode surfaces, matched to the hero gradient
+     (replaces the old neutral #121212 / #1e1e1e greys). */
+  --dark-bg: #0B1120;
+  --dark-surface: #141B2E;
+  --dark-surface-2: #1B2338;
+
+  --font-heading: 'Poppins', 'Source Sans Pro', sans-serif;
+  --font-body: 'Inter', 'Source Sans Pro', sans-serif;
+}
+
+body.dark-theme {
+  --surface-light: var(--surface-dark);
+}

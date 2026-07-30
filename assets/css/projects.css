@@ -68,3 +68,53 @@
   }
 
 }
+
+/* Masonry-style card grid, scoped to the Projects listing so it doesn't
+   touch the bare .container/.row/.box rules used elsewhere on the page
+   (navbar, footer). Cards keep each image's natural aspect ratio instead
+   of being cropped to a uniform size. */
+#projects.projects .container {
+  display: block;
+  column-count: 3;
+  column-gap: 24px;
+}
+
+#projects.projects .row {
+  display: contents;
+}
+
+#projects.projects .box {
+  display: inline-flex;
+  width: 100%;
+  flex: none;
+  max-width: 100%;
+  min-width: 0;
+  break-inside: avoid;
+  margin-bottom: 24px;
+}
+
+@media screen and (max-width: 991px) {
+  #projects.projects .container {
+    column-count: 2;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #projects.projects .container {
+    column-count: 1;
+  }
+
+  #projects.projects .box {
+    margin-bottom: 20px;
+  }
+}
+
+#projects.projects .box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(var(--accent-rgb), 0.25);
+}
+
+#projects.projects .box h3 {
+  font-family: var(--font-heading);
+  color: var(--accent);
+}
