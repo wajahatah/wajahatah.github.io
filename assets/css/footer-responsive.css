@@ -1,16 +1,5 @@
-/* Footer styles for desktop mode */
+/* Footer sits in normal document flow at the end of the page, matching every other project page */
 .footer-area {
-    position: fixed;
-    bottom: 0;
+    position: relative;
     width: 100%;
-    /* background-color: #333; */
-    z-index: 1000;
 }
-
-/* Footer styles for mobile/toggle mode */
-@media screen and (max-width: 768px) {
-    .footer-area {
-        position: relative;
-        bottom: auto;
-    }
-} 

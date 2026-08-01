@@ -42,13 +42,24 @@
             <p>Designed and implemented a comprehensive computer vision system for real-time student behavior analysis across 20 surveillance 
                 cameras. The project involved integrating trained keypoint detection models into a modular pipeline, conducting detailed model 
                 evaluations (MMPOSE vs. YOLO Pose), and optimizing for minimal false positives.</p>
-            <p>Led data collection and annotation workflows, trained and validated multiple models with varying configurations, and developed 
-                robust logic-based and ML-based algorithms to detect specific actions such as looking around, hand raise, and hand in pocket. 
-                Approaches included geometric rule-based methods, Random Forests, Decision Trees, shallow neural networks, and hybrid deep 
+            <p>Led data collection and annotation workflows, trained and validated multiple models with varying configurations, and developed
+                robust logic-based and ML-based algorithms to detect specific actions such as looking around, hand raise, and hand in pocket.
+                Approaches included geometric rule-based methods, Random Forests, Decision Trees, shallow neural networks, and hybrid deep
                 learning models, alongside advanced preprocessing techniques like keypoint normalization and ROI-based adjustment.</p>
-            <p>Manually curated datasets with over 63,000 annotated rows, tested diverse model architectures and feature engineering methods 
+            <p>Each behavior case had its own accuracy trajectory and required a different approach. <strong>Looking-around detection</strong>
+                began with geometric heuristics on pose keypoints, then went through repeated rounds of pose-model fine-tuning and additional
+                geometric constraints, eventually reaching up to 95% accuracy. <strong>Hand-raise detection</strong> proved harder, since
+                recognizing the action from 2D image keypoints alone is a fairly complex problem — an initial heuristic-only approach reached
+                only around 20-25% accuracy, which improved to roughly 70-75% after extracting pose keypoints as features and feeding them into
+                classical machine learning models (Random Forest, Decision Trees, and shallow neural networks). <strong>Hand-in-pocket
+                detection</strong> was a fresh case built from scratch, initially reaching about 78-79% accuracy; further experimentation across
+                RNN, CNN, hybrid CNN, LSTM, Random Forest, and MLP architectures, combined with data augmentation, found MLP to deliver the best
+                performance.</p>
+            <p>Manually curated datasets with over 63,000 annotated rows, tested diverse model architectures and feature engineering methods
                 (including temporal vector integration), and continuously improved system performance. The system was scaled from a single-
                 camera setup to a full-scale deployment across 20 cameras, with each camera calibrated for customized ROI and detection tuning.</p>
+            <p>Alongside accuracy improvements, optimized the inference pipeline to cut per-frame processing latency down to approximately
+                3ms, enabling reliable real-time detection across the full camera network.</p>
             <p>Successfully deployed the solution to a production server, where it is now actively monitoring and detecting student actions
                  in a live center environment with up to 95% accuracy.</p>
         </div>
