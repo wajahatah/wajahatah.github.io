@@ -88,6 +88,41 @@
 
     <section id="description-container">
         <div class="text-container">
+            <h3>RAGKIT</h3>
+            <p>A retrieval-augmented generation platform that answers questions from a private document collection with citations pointing to the exact source text. The pipeline combines dense vector search with BM25, fuses the two rankings, and reranks with a cross-encoder before generating an answer, and runs either as a single process or as a four-service container stack from the same codebase.</p>
+
+            <h4>Key Responsibilities</h4>
+            <ul>
+                <li>Designed the system as four services — AI, file management, retrieval, and an API gateway — communicating only through typed protocols, so the same codebase deploys as one process or as containers with no change to application code</li>
+                <li>Enforced the service boundaries with nine import-linter contracts checked in CI, which caught two dependency violations that had passed code review</li>
+                <li>Implemented hybrid retrieval combining dense vector search and BM25 through Reciprocal Rank Fusion, followed by cross-encoder reranking</li>
+                <li>Improved retrieval accuracy from 0.95 to 1.00 hit@1 and 0.976 to 1.000 MRR by adding the reranking stage</li>
+                <li>Built two chunking strategies, recursive and hierarchical, where only child chunks are embedded and parent chunks supply wider context at prompt time</li>
+                <li>Built an evaluation harness over a 21-question golden set measuring hit@k, MRR, nDCG and latency percentiles for each retrieval configuration</li>
+                <li>Calibrated the refusal threshold from measured score distributions after an initial intuition-based value caused false refusals on 10% of answerable questions</li>
+                <li>Reduced off-topic query latency from roughly 102s to 993ms by refusing before generation instead of calling the language model</li>
+                <li>Cut the cost of adding a document to a second knowledge base from a full parse, chunk and embed cycle down to a single database row by keying chunk sets to file, strategy, parameters and embedder</li>
+                <li>Replaced a message broker with a PostgreSQL job queue using FOR UPDATE SKIP LOCKED and lease-based crash recovery, keeping asynchronous ingestion without an extra operational dependency</li>
+                <li>Wrote 276 unit and contract tests plus 51 integration tests against a real PostgreSQL instance, with strict type checking across 117 source files</li>
+                <li>Containerised the full stack — four services, a web UI, PostgreSQL, MinIO and Qdrant — behind a single multi-stage Dockerfile with health-gated startup ordering</li>
+            </ul>
+        </div>
+
+        <div class="image-container">
+             <img src="../assets/img/RAG/Screenshot 2026-08-15 135036.png" alt="RAG Systems Overview">
+        </div>
+    </section>
+
+    <!-- <section id="video">
+        <div class="video-container">
+            Add RAG Chat demo video iframe here, e.g.
+            <iframe src="https://drive.google.com/file/d/YOUR_FILE_ID/preview" allow="autoplay" frameborder="0" allowfullscreen></iframe>
+           
+        </div>
+    </section> -->
+    
+    <section id="description-container">
+        <div class="text-container">
             <h3>RAG Chat</h3>
             <p>A solo project built as a basic demo system, with every part of the pipeline made swappable. The vector database can be Chroma, Milvus, or others; the LLM can be served through Ollama, HuggingFace, or any external API; and the embedding model and reranker are similarly interchangeable. The system parses an uploaded document and answers queries against it.</p>
 
